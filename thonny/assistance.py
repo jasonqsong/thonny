@@ -303,6 +303,8 @@ class AssistantView(tktextext.TextFrame):
             self._append_feedback_link()
 
         if self._exception_info:
+            # nagi@naive: Don't hint
+            return
             self._append_text(
                 "General advice on dealing with errors.\n", ("a", "python_errors_link")
             )
@@ -390,6 +392,8 @@ class AssistantView(tktextext.TextFrame):
         )
 
     def _append_feedback_link(self):
+        # nagi@naive: Don't hint
+        return
         self._append_text("Was it helpful or confusing?\n", ("a", "feedback_link"))
 
     def _format_file_url(self, atts):

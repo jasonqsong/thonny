@@ -156,6 +156,7 @@ def _check_welcome():
         conf = ConfigurationManager(CONFIGURATION_FILE)
         conf.set_option("general.language", "zh_CN")
         conf.set_option("general.ui_mode", "simple")
+        conf.set_option("file.reopen_all_files", True)
         conf.save()
         return True
 

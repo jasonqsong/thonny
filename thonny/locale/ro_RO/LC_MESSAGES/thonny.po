@@ -1,84 +1,628 @@
+
 msgid ""
 msgstr ""
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"X-Generator: POEditor.com\n"
-"Project-Id-Version: Thonny\n"
+"Project-Id-Version:  Thonny\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2021-02-05 00:54+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ro\n"
+"Language-Team: ro <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100 > 0 && n%100"
+" < 20)) ? 1 : 2)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
 
-#: thonny/workbench.py:346
-msgid "File"
-msgstr "Fișier"
+#: thonny/assistance.py:983 thonny/plugins/assistant_config_page.py:73
+msgid "Assistant"
+msgstr "Asistent"
 
-#: thonny/workbench.py:347
-msgid "Edit"
-msgstr "Modificări ×"
+#: thonny/base_file_browser.py:84 thonny/memory.py:63
+#, fuzzy
+msgid "Name"
+msgstr "Redenumiți ..."
 
-#: thonny/workbench.py:348
-msgid "View"
-msgstr "Ferestre"
+#: thonny/base_file_browser.py:86 thonny/base_file_browser.py:738
+msgid "Modified"
+msgstr "Modificat"
 
-#: thonny/running.py:122 thonny/workbench.py:349
+#: thonny/base_file_browser.py:88
+msgid "Size (bytes)"
+msgstr ""
+
+#: thonny/base_file_browser.py:276
+#, python-format
+msgid "%d items"
+msgstr "% d articole"
+
+#: thonny/base_file_browser.py:328
+msgid "Storage space on this drive or filesystem"
+msgstr ""
+
+#: thonny/base_file_browser.py:329
+msgid "total space"
+msgstr ""
+
+#: thonny/base_file_browser.py:331
+msgid "used space"
+msgstr ""
+
+#: thonny/base_file_browser.py:332
+msgid "free space"
+msgstr ""
+
+#: thonny/base_file_browser.py:339
+msgid "Storage info"
+msgstr ""
+
+#: thonny/base_file_browser.py:621
+msgid "Refresh"
+msgstr "Reîmprospăta"
+
+#: thonny/base_file_browser.py:623
+msgid "Open in system file manager"
+msgstr ""
+
+#: thonny/base_file_browser.py:628
+msgid "Hide hidden files"
+msgstr ""
+
+#: thonny/base_file_browser.py:628
+msgid "Show hidden files"
+msgstr ""
+
+#: thonny/base_file_browser.py:634
+msgid "Focus into"
+msgstr "Concentrați-vă în"
+
+#: thonny/base_file_browser.py:638
+msgid "Open in Thonny"
+msgstr ""
+
+#: thonny/base_file_browser.py:643 thonny/base_file_browser.py:664
+msgid "Open in system default app"
+msgstr ""
+
+#: thonny/base_file_browser.py:650 thonny/base_file_browser.py:672
+#, python-format
+msgid "Configure %s files"
+msgstr ""
+
+#: thonny/base_file_browser.py:665
+msgid "Open in Thonny's text editor"
+msgstr ""
+
+#: thonny/base_file_browser.py:673
+#, python-format
+msgid ""
+"What to do with a %s file when you double-click it in Thonny's file "
+"browser?"
+msgstr ""
+
+#: thonny/base_file_browser.py:695
+msgid "Move to Recycle Bin"
+msgstr "Treceți la Coșul de reciclare"
+
+#: thonny/base_file_browser.py:697
+msgid "Move to Trash"
+msgstr "Aruncă la gunoi"
+
+#: thonny/base_file_browser.py:700
+msgid "Delete"
+msgstr "Șterge"
+
+#: thonny/base_file_browser.py:703 thonny/base_file_browser.py:837
+msgid "New directory"
+msgstr "Director nou"
+
+#: thonny/base_file_browser.py:706
+msgid "Properties"
+msgstr "Proprietăți"
+
+#: thonny/base_file_browser.py:708
+msgid "Storage space"
+msgstr "Spatiu de depozitare"
+
+#: thonny/base_file_browser.py:718
+msgid "Path"
+msgstr "cale"
+
+#: thonny/base_file_browser.py:720
+msgid "Directory properties"
+msgstr "Proprietățile directorului"
+
+#: thonny/base_file_browser.py:722
+msgid "File properties"
+msgstr "Proprietățile fișierului"
+
+#: thonny/base_file_browser.py:724
+msgid "bytes"
+msgstr "octeți"
+
+#: thonny/base_file_browser.py:727
+msgid "Size"
+msgstr "mărimea"
+
+#: thonny/base_file_browser.py:797
+#, python-format
+msgid "Deleting %s"
+msgstr "Se șterge% s"
+
+#: thonny/base_file_browser.py:820
+#, python-format
+msgid "Moving %s to %s"
+msgstr "Se mută% s la% s"
+
+#: thonny/base_file_browser.py:838
+#, python-format
+msgid ""
+"Enter name for new directory under\n"
+"%s"
+msgstr ""
+
+#: thonny/base_file_browser.py:861
+msgid "Nothing selected"
+msgstr ""
+
+#: thonny/base_file_browser.py:861
+msgid "Select an item and try again!"
+msgstr ""
+
+#: thonny/base_file_browser.py:1052 thonny/editors.py:882 thonny/editors.py:884
+#: thonny/plugins/micropython/pip_gui.py:77
+msgid "Deleting"
+msgstr ""
+
+#: thonny/base_file_browser.py:1059
+msgid "Creating directory"
+msgstr ""
+
+#: thonny/base_file_browser.py:1119
+#, python-format
+msgid "Open from %s"
+msgstr ""
+
+#: thonny/base_file_browser.py:1122
+#, fuzzy, python-format
+msgid "Save to %s"
+msgstr "Încărcați în% s"
+
+#: thonny/base_file_browser.py:1134
+msgid "File name:"
+msgstr ""
+
+#: thonny/base_file_browser.py:1144 thonny/config_ui.py:37 thonny/export.py:25
+#: thonny/plugins/about.py:120 thonny/plugins/backend_config_page.py:268
+#: thonny/ui_utils.py:111 thonny/ui_utils.py:1704 thonny/workdlg.py:197
+msgid "OK"
+msgstr "O.K"
+
+#: thonny/base_file_browser.py:1147 thonny/config_ui.py:38 thonny/export.py:28
+#: thonny/plugins/backend_config_page.py:273 thonny/plugins/pip_gui.py:1146
+#: thonny/ui_utils.py:114 thonny/ui_utils.py:1622 thonny/ui_utils.py:1707
+#: thonny/workdlg.py:156 thonny/workdlg.py:200
+msgid "Cancel"
+msgstr "Anulare"
+
+#: thonny/base_file_browser.py:1170 thonny/base_file_browser.py:1182
+msgid "Error"
+msgstr "Eroare"
+
+#: thonny/base_file_browser.py:1170 thonny/base_file_browser.py:1182
+msgid "You need to select a file!"
+msgstr "Trebuie să selectați un fișier!"
+
+#: thonny/base_file_browser.py:1186
+msgid "Overwrite?"
+msgstr "Suprascrieți?"
+
+#: thonny/base_file_browser.py:1186
+#, python-format
+msgid "Do you want to overwrite '%s' ?"
+msgstr "Doriți să suprascrieți „% s”?"
+
+#: thonny/base_file_browser.py:1331
+msgid "This computer"
+msgstr "Acest calculator"
+
+#: thonny/config_ui.py:21
+msgid "Thonny options"
+msgstr "Opțiuni Thonny"
+
+#: thonny/editors.py:119
+msgid "File is gone"
+msgstr ""
+
+#: thonny/editors.py:120
+#, python-format
+msgid "Looks like '%s' was deleted or moved outside of the editor."
+msgstr ""
+
+#: thonny/editors.py:123
+msgid "Do you want to also close the editor?"
+msgstr ""
+
+#: thonny/editors.py:135
+#, fuzzy
+msgid "External modification"
+msgstr "Emulare terminală"
+
+#: thonny/editors.py:136
+#, python-format
+msgid "Looks like '%s' was modified outside the editor."
+msgstr ""
+
+#: thonny/editors.py:138
+msgid ""
+"Do you want to discard current editor content and reload the file from "
+"disk?"
+msgstr ""
+
+#: thonny/editors.py:221
+#, python-format
+msgid "Loading %s"
+msgstr ""
+
+#: thonny/editors.py:223
+msgid "Loading"
+msgstr "Se încarcă"
+
+#: thonny/editors.py:337
+#, python-format
+msgid "Saving to %s"
+msgstr ""
+
+#: thonny/editors.py:339
+msgid "Saving"
+msgstr "Economisire"
+
+#: thonny/editors.py:557 thonny/editors.py:559
+msgid "New"
+msgstr "Nou"
+
+#: thonny/editors.py:570
+msgid "Open..."
+msgstr "Deschis..."
+
+#: thonny/editors.py:572
+msgid "Load"
+msgstr "Sarcină"
+
+#: thonny/editors.py:581
+msgid "Recent files"
+msgstr "Fisiere recente"
+
+#: thonny/editors.py:592 thonny/plugins/pip_gui.py:228 thonny/ui_utils.py:448
+#: thonny/ui_utils.py:1760 thonny/workdlg.py:154
+msgid "Close"
+msgstr "Închide"
+
+#: thonny/editors.py:603 thonny/ui_utils.py:450
+msgid "Close all"
+msgstr "Inchide tot"
+
+#: thonny/editors.py:613 thonny/editors.py:615
+msgid "Save"
+msgstr "salva"
+
+#: thonny/editors.py:627 thonny/editors.py:629
+msgid "Save All files"
+msgstr ""
+
+#: thonny/editors.py:638 thonny/editors.py:640
+msgid "Save as..."
+msgstr "Salvează ca..."
+
+#: thonny/editors.py:652
+msgid "Save copy..."
+msgstr "Salvați copia ..."
+
+#: thonny/editors.py:661
+#, fuzzy
+msgid "Move / rename..."
+msgstr "Redenumiți ..."
+
+#: thonny/editors.py:1043
+msgid "Do you want to save files before closing?"
+msgstr ""
+
+#: thonny/editors.py:1045
+msgid "Do you want to save file before closing?"
+msgstr ""
+
+#: thonny/editors.py:1048
+msgid "Save On Close"
+msgstr ""
+
+#: thonny/memory.py:64 thonny/plugins/object_inspector.py:513
+#: thonny/plugins/object_inspector.py:592
+msgid "Value ID"
+msgstr ""
+
+#: thonny/memory.py:65 thonny/plugins/heap.py:23
+#: thonny/plugins/object_inspector.py:514
+#: thonny/plugins/object_inspector.py:593
+msgid "Value"
+msgstr ""
+
+#: thonny/misc_utils.py:134
+#, python-format
+msgid "Could not find disk '%s'. Do you want to locate it yourself?"
+msgstr "Nu s-a putut găsi discul '% s'. Vrei să-l localizezi singur?"
+
+#: thonny/misc_utils.py:137
+#, python-format
+msgid "Found several '%s' disks. Do you want to choose one yourself?"
+msgstr "S-au găsit mai multe discuri „% s”. Vrei să alegi unul singur?"
+
+#: thonny/misc_utils.py:153
+msgid "Can't find suitable disk"
+msgstr "Nu pot găsi discul potrivit"
+
+#: thonny/running.py:123
+msgid "Run current script"
+msgstr "Rulați scriptul curent"
+
+#: thonny/running.py:124 thonny/workbench.py:367
 msgid "Run"
 msgstr "Derulare"
 
-#: thonny/workbench.py:350
+#: thonny/running.py:154
+msgid "Run current script in terminal"
+msgstr "Rulați scriptul curent în terminal"
+
+#: thonny/running.py:167
+msgid "Stop/Restart backend"
+msgstr "Oprire / Repornire backend"
+
+#: thonny/running.py:168
+msgid "Stop"
+msgstr "Stop"
+
+#: thonny/running.py:179
+msgid "Interrupt execution"
+msgstr "Întrerupe executarea"
+
+#: thonny/running.py:192
+msgid "Send EOF / Soft reboot"
+msgstr "Trimiteți repornirea EOF / Soft"
+
+#: thonny/running.py:203
+msgid "Disconnect"
+msgstr "Deconectat"
+
+#: thonny/shell.py:83
+msgid "Clear shell"
+msgstr "Coajă clară"
+
+#: thonny/shell.py:138
+msgid "Plotter"
+msgstr "Plotter"
+
+#: thonny/shell.py:270
+msgid "Clear"
+msgstr "clar"
+
+#: thonny/shell.py:283
+msgid "Show Plotter"
+msgstr "Arată Plotter"
+
+#: thonny/shell.py:1575
+msgid ""
+"For performance reasons, Shell avoids showing very long lines in full "
+"(see Tools => Options => Shell).\n"
+"Here you can interact with the original text fragment."
+msgstr ""
+"Din motive de performanță, Shell evită afișarea liniilor foarte lungi în "
+"întregime (consultați Instrumente => Opțiuni => Shell).\n"
+"Aici puteți interacționa cu fragmentul de text original."
+
+#: thonny/shell.py:1586
+msgid "Wrap text (may be slow)"
+msgstr "Wrap text (poate fi lent)"
+
+#: thonny/shell.py:1628
+#, python-format
+msgid "Squeezed text (%d characters)"
+msgstr "Text stors (% d caractere)"
+
+#: thonny/shell.py:1797
+msgid ""
+"Plotter visualizes series of\n"
+"numbers printed to the Shell."
+msgstr ""
+"Plotter vizualizează serii de\n"
+"numere tipărite pe Shell."
+
+#: thonny/shell.py:1799
+msgid "See Help for details."
+msgstr "Consultați Ajutor pentru detalii."
+
+#: thonny/ui_utils.py:449
+msgid "Close others"
+msgstr "Închide altele"
+
+#: thonny/ui_utils.py:1611
+msgid "Copying"
+msgstr "Copiere"
+
+#: thonny/ui_utils.py:1614
+#, python-format
+msgid ""
+"Copying\n"
+"  %s\n"
+"to\n"
+"  %s"
+msgstr ""
+"Copiere\n"
+"  % s\n"
+"la\n"
+"  % s"
+
+#: thonny/ui_utils.py:1755
+msgid "Copy to clipboard"
+msgstr "Copiați în clipboard"
+
+#: thonny/plugins/common_editing_commands.py:49 thonny/ui_utils.py:2181
+msgid "Cut"
+msgstr "Taie"
+
+#: thonny/plugins/common_editing_commands.py:61 thonny/ui_utils.py:2182
+msgid "Copy"
+msgstr "Copiază"
+
+#: thonny/plugins/common_editing_commands.py:73 thonny/ui_utils.py:2183
+msgid "Paste"
+msgstr "Lipește"
+
+#: thonny/ui_utils.py:2187
+msgid "Select All"
+msgstr "Selectează tot"
+
+#: thonny/plugins/shell_config_page.py:73 thonny/workbench.py:164
+msgid "Shell"
+msgstr "Coajă"
+
+#: thonny/workbench.py:364
+msgid "File"
+msgstr "Fișier"
+
+#: thonny/workbench.py:365
+msgid "Edit"
+msgstr "Modificări ×"
+
+#: thonny/workbench.py:366
+msgid "View"
+msgstr "Ferestre"
+
+#: thonny/workbench.py:368
 msgid "Tools"
 msgstr "Instrumente"
 
-#: thonny/plugins/help/__init__.py:74 thonny/workbench.py:351
+#: thonny/plugins/help/__init__.py:80 thonny/workbench.py:369
 msgid "Help"
 msgstr "Ajutor"
 
-#: thonny/plugins/cpython/__init__.py:610
-msgid "Alternative Python 3 interpreter or virtual environment"
-msgstr "Interpret alternativ Python 3 sau mediu virtual"
-
-#: thonny/plugins/cpython/__init__.py:618
-msgid "A special virtual environment (deprecated)"
-msgstr "Un mediu virtual special (nerecomandat)"
-
-#: thonny/workbench.py:571
+#: thonny/workbench.py:589
 msgid "Exit"
 msgstr "Ieșire"
 
-#: thonny/workbench.py:598
+#: thonny/workbench.py:599
+msgid "Options..."
+msgstr "Opțiuni..."
+
+#: thonny/workbench.py:606
+msgid "Increase font size"
+msgstr "Măriți dimensiunea fontului"
+
+#: thonny/workbench.py:616
 msgid "Decrease font size"
 msgstr "Reduceți dimensiunea fontului"
 
-#: thonny/workbench.py:610
+#: thonny/workbench.py:628
 msgid "Focus editor"
 msgstr "Editor Focus"
 
-#: thonny/workbench.py:619
+#: thonny/workbench.py:637
 msgid "Focus shell"
 msgstr "Focus shell"
 
-#: thonny/workbench.py:630
+#: thonny/workbench.py:648
 msgid "Maximize view"
 msgstr "Maximizează fereastra"
 
-#: thonny/workbench.py:642
+#: thonny/workbench.py:660
 msgid "Full screen"
 msgstr "Ecran complet"
 
-#: thonny/workbench.py:1366
+#: thonny/workbench.py:672
+msgid "Change font size"
+msgstr "Schimba marimea fontului"
+
+#: thonny/workbench.py:673
+msgid "Zoom"
+msgstr "Zoom"
+
+#: thonny/workbench.py:682
+msgid "Exit Thonny"
+msgstr "Ieșiți din Thonny"
+
+#: thonny/workbench.py:685
+msgid "Quit"
+msgstr "Părăsi"
+
+#: thonny/workbench.py:836
+msgid "Configure interpreter..."
+msgstr ""
+
+#: thonny/workbench.py:1205 thonny/workbench.py:1213
+#, python-format
+msgid "Overwriting theme '%s'"
+msgstr "Suprascrierea temei „% s”"
+
+#: thonny/workbench.py:1372
+msgid "Program arguments:"
+msgstr "Argumente ale programului:"
+
+#: thonny/workbench.py:1401
 msgid "Program arguments"
 msgstr "Argumente ale programului"
+
+#: thonny/workbench.py:1417
+msgid ""
+"Switch to\n"
+"regular\n"
+"mode"
+msgstr ""
+"Schimba cu\n"
+"regulat\n"
+"modul"
+
+#: thonny/workbench.py:1428
+msgid "Regular mode"
+msgstr "Mod regulat"
+
+#: thonny/workbench.py:1429
+msgid ""
+"Configuration has been updated. Restart Thonny to start working in "
+"regular mode.\n"
+"\n"
+"(See 'Tools → Options → General' if you change your mind later.)"
+msgstr ""
+"Configurarea a fost actualizată. Reporniți Thonny pentru a începe să "
+"lucrați în modul normal.\n"
+"\n"
+"(Consultați „Instrumente → Opțiuni → General” dacă vă răzgândiți mai "
+"târziu.)"
+
+#: thonny/workbench.py:1527
+msgid "Device"
+msgstr ""
+
+#: thonny/workdlg.py:184
+msgid "Cancelling"
+msgstr ""
+
+#: thonny/workdlg.py:211
+msgid "Starting"
+msgstr ""
 
 #: thonny/plugins/about.py:28 thonny/plugins/about.py:163
 msgid "About Thonny"
 msgstr "Despre Thonny"
 
 #: thonny/plugins/about.py:81
-msgid "Made in\n"
+msgid ""
+"Made in\n"
 "University of Tartu, Estonia,\n"
 "with the help from\n"
 "open-source community,\n"
 "Raspberry Pi Foundation\n"
 "and Cybernetica AS"
-msgstr "Facut in\n"
+msgstr ""
+"Facut in\n"
 "Universitatea din Tartu, Estonia,\n"
 "cu ajutorul de la\n"
 "comunitate open-source,\n"
@@ -86,13 +630,15 @@ msgstr "Facut in\n"
 "și Cybernetica AS"
 
 #: thonny/plugins/about.py:107
-msgid "This program comes with\n"
+msgid ""
+"This program comes with\n"
 "ABSOLUTELY NO WARRANTY!\n"
 "It is free software, and you are welcome to\n"
 "redistribute it under certain conditions, see\n"
 "https://opensource.org/licenses/MIT\n"
 "for details"
-msgstr "Acest program vine cu\n"
+msgstr ""
+"Acest program vine cu\n"
 "ABSOLUT FĂRĂ GARANȚIE!\n"
 "Este software gratuit și sunteți binevenit la\n"
 "redistribuiți-l în anumite condiții, a se vedea\n"
@@ -107,51 +653,83 @@ msgstr "Versiunea istorică"
 msgid "Report problems"
 msgstr "Raportați probleme"
 
-#: thonny/plugins/assistant_config_page.py:31
+#: thonny/plugins/assistant_config_page.py:16
 msgid "Open Assistant automatically when program crashes with an exception"
 msgstr "Deschideți automat Asistentul când programul se blochează cu o excepție"
 
-#: thonny/plugins/assistant_config_page.py:38
+#: thonny/plugins/assistant_config_page.py:23
 msgid "Open Assistant automatically when it has warnings for your code"
 msgstr "Deschideți automat Asistentul când are avertismente pentru codul dvs."
 
-#: thonny/plugins/assistant_config_page.py:45
+#: thonny/plugins/assistant_config_page.py:30
 msgid "Perform selected Pylint checks"
 msgstr "Efectuați verificări Pylint selectate"
 
-#: thonny/plugins/assistant_config_page.py:49
+#: thonny/plugins/assistant_config_page.py:34
 msgid "Perform MyPy checks"
 msgstr "Efectuați verificări MyPy"
 
-#: thonny/plugins/assistant_config_page.py:51
+#: thonny/plugins/assistant_config_page.py:36
 msgid "Disabled checks (one id per line)"
 msgstr "Verificări dezactivate (un ID pe linie)"
 
-#: thonny/assistance.py:968 thonny/plugins/assistant_config_page.py:89
-msgid "Assistant"
-msgstr "Asistent"
+#: thonny/plugins/ast_view.py:213
+msgid "Program tree"
+msgstr "Arborele programului"
 
-#: thonny/plugins/autocomplete.py:333
+#: thonny/plugins/autocomplete.py:334
 msgid "Auto-complete"
 msgstr "Completare automată"
 
 #: thonny/plugins/backend_config_page.py:84
 msgid "Which interpreter or device should Thonny use for running your code?"
-msgstr "Ce interpret sau dispozitiv ar trebui să utilizeze Thonny pentru a vă rula codul?"
+msgstr ""
+"Ce interpret sau dispozitiv ar trebui să utilizeze Thonny pentru a vă "
+"rula codul?"
+
+#: thonny/plugins/backend_config_page.py:103
+msgid "Details"
+msgstr "Detalii"
+
+#: thonny/plugins/backend_config_page.py:234
+msgid "Authentication"
+msgstr ""
+
+#: thonny/plugins/backend_config_page.py:236
+msgid ""
+"Enter the passphrase of your private key for\n"
+"{}"
+msgstr ""
+
+#: thonny/plugins/backend_config_page.py:239
+msgid ""
+"Enter your password for\n"
+"{}"
+msgstr ""
+
+#: thonny/plugins/backend_config_page.py:257
+msgid "Save password"
+msgstr ""
 
 #: thonny/plugins/backend_config_page.py:320
 msgid "Interpreter"
 msgstr "Interpret"
+
+#: thonny/plugins/backend_config_page.py:323
+msgid "Select interpreter"
+msgstr "Selectați interpret"
 
 #: thonny/plugins/birdseye_frontend.py:54
 msgid "About Birdseye"
 msgstr "Despre Birdseye"
 
 #: thonny/plugins/birdseye_frontend.py:55
-msgid "Birdseye is a Python debugger which needs to be installed separately.\n"
+msgid ""
+"Birdseye is a Python debugger which needs to be installed separately.\n"
 "\n"
 "Do you want to open the help page and learn more?"
-msgstr "Birdseye este un depanator Python care trebuie instalat separat.\n"
+msgstr ""
+"Birdseye este un depanator Python care trebuie instalat separat.\n"
 "\n"
 "Doriți să deschideți pagina de ajutor și să aflați mai multe?"
 
@@ -159,15 +737,27 @@ msgstr "Birdseye este un depanator Python care trebuie instalat separat.\n"
 msgid "Debug current script (birdseye)"
 msgstr "Depanare script curent (birdseye)"
 
-#: thonny/plugins/commenting_indenting.py:144
+#: thonny/plugins/commenting_indenting.py:143
+msgid "Indent selected lines"
+msgstr "Indentați liniile selectate"
+
+#: thonny/plugins/commenting_indenting.py:153
+msgid "Dedent selected lines"
+msgstr "Dedentează liniile selectate"
+
+#: thonny/plugins/commenting_indenting.py:163
+msgid "Replace tabs with spaces"
+msgstr ""
+
+#: thonny/plugins/commenting_indenting.py:172
 msgid "Toggle comment"
 msgstr "Comutați comentariul"
 
-#: thonny/plugins/commenting_indenting.py:154
+#: thonny/plugins/commenting_indenting.py:182
 msgid "Comment out"
 msgstr "Comentează"
 
-#: thonny/plugins/commenting_indenting.py:164
+#: thonny/plugins/commenting_indenting.py:192
 msgid "Uncomment"
 msgstr "Decomentează"
 
@@ -179,25 +769,22 @@ msgstr "Anulează"
 msgid "Redo"
 msgstr "Reface"
 
-#: thonny/plugins/common_editing_commands.py:49 thonny/ui_utils.py:2191
-msgid "Cut"
-msgstr "Taie"
-
-#: thonny/plugins/common_editing_commands.py:61 thonny/ui_utils.py:2192
-msgid "Copy"
-msgstr "Copiază"
-
-#: thonny/plugins/common_editing_commands.py:73 thonny/ui_utils.py:2193
-msgid "Paste"
-msgstr "Lipește"
-
 #: thonny/plugins/common_editing_commands.py:85 thonny/plugins/debugger.py:152
 msgid "Select all"
 msgstr "Selectează tot"
 
-#: thonny/plugins/debugger.py:145 thonny/plugins/debugger.py:1397
+#: thonny/plugins/debugger.py:145 thonny/plugins/debugger.py:1410
 msgid "Run to cursor"
 msgstr "Rulați la cursor"
+
+#: thonny/plugins/debugger.py:553
+#, python-format
+msgid "Function call at %s"
+msgstr ""
+
+#: thonny/plugins/debugger.py:959
+msgid "Source code"
+msgstr ""
 
 #: thonny/plugins/debugger.py:980
 msgid "Can't close yet"
@@ -206,6 +793,90 @@ msgstr "Nu se poate închide încă"
 #: thonny/plugins/debugger.py:981
 msgid "Use \"Stop\" command if you want to cancel debugging"
 msgstr "Utilizați comanda „Stop” dacă doriți să anulați depanarea"
+
+#: thonny/plugins/debugger.py:1001
+#, fuzzy
+msgid "Local variables"
+msgstr "Evidențiați variabilele locale"
+
+#: thonny/plugins/debugger.py:1033
+msgid "Function"
+msgstr ""
+
+#: thonny/plugins/debugger.py:1034
+#, fuzzy
+msgid "Location"
+msgstr "Locație: "
+
+#: thonny/plugins/debugger.py:1110
+msgid ""
+"If last command raised an exception then this view will show the "
+"stacktrace."
+msgstr ""
+
+#: thonny/plugins/debugger.py:1280
+msgid "Resume"
+msgstr "Relua"
+
+#: thonny/plugins/debugger.py:1296
+msgid "Run / resume"
+msgstr "Rulați / reluați"
+
+#: thonny/plugins/debugger.py:1311
+msgid "Debug current script"
+msgstr "Depanare script curent"
+
+#: thonny/plugins/debugger.py:1313
+msgid "Debug"
+msgstr "Depanare"
+
+#: thonny/plugins/debugger.py:1324
+msgid "Debug current script (nicer)"
+msgstr "Depanare script curent (mai frumos)"
+
+#: thonny/plugins/debugger.py:1336
+msgid "Debug current script (faster)"
+msgstr "Depanare script curent (mai rapid)"
+
+#: thonny/plugins/debugger.py:1347
+msgid "Step over"
+msgstr "Pas peste"
+
+#: thonny/plugins/debugger.py:1349
+msgid "Over"
+msgstr "Peste"
+
+#: thonny/plugins/debugger.py:1360
+msgid "Step into"
+msgstr "Pășește înăuntru"
+
+#: thonny/plugins/debugger.py:1362
+msgid "Into"
+msgstr "În"
+
+#: thonny/plugins/debugger.py:1373
+msgid "Step out"
+msgstr "Iesi afara"
+
+#: thonny/plugins/debugger.py:1375
+msgid "Out"
+msgstr "Afară"
+
+#: thonny/plugins/debugger.py:1385
+msgid "Step back"
+msgstr "Intoarce-te"
+
+#: thonny/plugins/debugger.py:1387
+msgid "Back"
+msgstr "Înapoi"
+
+#: thonny/plugins/debugger.py:1419
+msgid "Stack"
+msgstr "Grămadă"
+
+#: thonny/plugins/debugger.py:1420
+msgid "Exception"
+msgstr "Excepție"
 
 #: thonny/plugins/dock_user_windows_frontend.py:28
 msgid "Dock user windows"
@@ -227,29 +898,40 @@ msgstr "Evidențiați parantezele"
 msgid "Highlight syntax elements"
 msgstr "Evidențiați elementele de sintaxă"
 
-#: thonny/plugins/editor_config_page.py:30
+#: thonny/plugins/editor_config_page.py:28
+#, fuzzy
+msgid "Highlight tab characters"
+msgstr "Evidențiați perechile de nume"
+
+#: thonny/plugins/editor_config_page.py:31
 msgid "Highlight current line (requires reopening the editor)"
 msgstr "Evidențiați linia curentă (necesită redeschiderea editorului)"
 
-#: thonny/plugins/editor_config_page.py:35
+#: thonny/plugins/editor_config_page.py:36
 msgid "Allow code completion with Tab-key in editors"
 msgstr "Permiteți completarea codului cu tasta Tab în editori"
 
-#: thonny/plugins/editor_config_page.py:41
+#: thonny/plugins/editor_config_page.py:42
 msgid "Allow code completion with Tab-key in Shell"
 msgstr "Permiteți completarea codului cu tasta Tab în Shell"
 
-#: thonny/plugins/editor_config_page.py:45
+#: thonny/plugins/editor_config_page.py:47
+msgid "Indent with tab characters (not recommended for Python)"
+msgstr ""
+
+#: thonny/plugins/editor_config_page.py:51
 msgid "Show line numbers"
 msgstr "Afișați numerele de linie"
 
-#: thonny/plugins/editor_config_page.py:48
-msgid "Recommended maximum line length\n"
+#: thonny/plugins/editor_config_page.py:54
+msgid ""
+"Recommended maximum line length\n"
 "(Set to 0 to turn off margin line)"
-msgstr "Lungimea maximă recomandată a liniei\n"
+msgstr ""
+"Lungimea maximă recomandată a liniei\n"
 "(Setați la 0 pentru a dezactiva linia de margine)"
 
-#: thonny/plugins/editor_config_page.py:69
+#: thonny/plugins/editor_config_page.py:75
 msgid "Editor"
 msgstr "Editor"
 
@@ -261,7 +943,22 @@ msgstr "Exportați jurnalele de utilizare ..."
 msgid "Events"
 msgstr "Evenimente"
 
-#: thonny/plugins/files.py:550
+#: thonny/plugins/files.py:216
+#, python-format
+msgid "Upload to %s"
+msgstr "Încărcați în% s"
+
+#: thonny/plugins/files.py:275
+#, python-format
+msgid "Download to %s"
+msgstr "Descărcați în% s"
+
+#: thonny/plugins/files.py:362
+#, python-format
+msgid "Downloading %s to %s"
+msgstr "Se descarcă% s în% s"
+
+#: thonny/plugins/files.py:551
 msgid "Files"
 msgstr "Dosare"
 
@@ -313,45 +1010,94 @@ msgstr "Introduceți șirul de înlocuit."
 msgid "The specified text was not found!"
 msgstr "Textul specificat nu a fost găsit!"
 
-#: thonny/plugins/general_config_page.py:14
+#: thonny/plugins/general_config_page.py:15
 msgid "Allow only single Thonny instance"
 msgstr "Permiteți doar o singură instanță Thonny"
 
-#: thonny/plugins/general_config_page.py:21
+#: thonny/plugins/general_config_page.py:18
+msgid "Log program usage events"
+msgstr "Înregistrați evenimente de utilizare a programului"
+
+#: thonny/plugins/general_config_page.py:22
 msgid "Reopen all files from previous session"
 msgstr "Deschideți toate fișierele din sesiunea anterioară"
 
-#: thonny/plugins/general_config_page.py:27
+#: thonny/plugins/general_config_page.py:29
+msgid "Use Tk file dialogs instead of Zenity"
+msgstr ""
+
+#: thonny/plugins/general_config_page.py:30
+msgid "Select if the file dialogs end up behind the main window"
+msgstr ""
+
+#: thonny/plugins/general_config_page.py:37
 msgid "Disable notification sound"
 msgstr "Dezactivează sunetul de notificare"
 
-#: thonny/plugins/general_config_page.py:76
+#: thonny/plugins/general_config_page.py:43
+msgid "Debug mode (provides more detailed diagnostic logs)"
+msgstr "Mod de depanare (oferă jurnale de diagnostic mai detaliate)"
+
+#: thonny/plugins/general_config_page.py:53
+msgid "Language"
+msgstr "Limba"
+
+#: thonny/plugins/general_config_page.py:67
+msgid "UI mode"
+msgstr "Mod UI"
+
+#: thonny/plugins/general_config_page.py:80
+msgid "UI scaling factor"
+msgstr "Factor de scalare UI"
+
+#: thonny/plugins/general_config_page.py:86
 msgid "Font scaling mode"
 msgstr "Modul de scalare a fontului"
 
+#: thonny/plugins/general_config_page.py:97
+msgid "Environment variables (one KEY=VALUE per line)"
+msgstr ""
+
+#: thonny/plugins/general_config_page.py:108
+msgid "NB! Restart Thonny after changing these options!"
+msgstr "NB! Reporniți Thonny după schimbarea acestor opțiuni!"
+
+#: thonny/plugins/general_config_page.py:129
+msgid "General"
+msgstr "General"
+
+#: thonny/plugins/heap.py:22
+#, fuzzy
+msgid "ID"
+msgstr "Găsi"
+
 #: thonny/plugins/heap.py:37
-msgid "Heap mode is on.\n"
+msgid ""
+"Heap mode is on.\n"
 "Close Heap view to turn it off."
-msgstr "Modul Heap este activat.\n"
+msgstr ""
+"Modul Heap este activat.\n"
 "Închideți vizualizarea Heap pentru a o dezactiva."
 
 #: thonny/plugins/heap.py:86
 msgid "Heap"
 msgstr "Morman"
 
-#: thonny/plugins/general_config_page.py:43
-msgid "Language"
-msgstr "Limba"
-
 #: thonny/plugins/notes.py:35
-msgid "This box is meant for your working notes -- assignment instructions, code snippets, whatever.\n"
+msgid ""
+"This box is meant for your working notes -- assignment instructions, code"
+" snippets, whatever.\n"
 "\n"
-"Everything will be saved automatically and loaded when you open Thonny next time.\n"
+"Everything will be saved automatically and loaded when you open Thonny "
+"next time.\n"
 "\n"
 "Feel free to delete this text to make room for your own notes."
-msgstr "Această casetă este destinată notelor dvs. de lucru - instrucțiuni de atribuire, fragmente de cod, orice altceva.\n"
+msgstr ""
+"Această casetă este destinată notelor dvs. de lucru - instrucțiuni de "
+"atribuire, fragmente de cod, orice altceva.\n"
 "\n"
-"Totul va fi salvat automat și încărcat când veți deschide Thonny data viitoare.\n"
+"Totul va fi salvat automat și încărcat când veți deschide Thonny data "
+"viitoare.\n"
 "\n"
 "Simțiți-vă liber să ștergeți acest text pentru a face loc propriilor note."
 
@@ -359,19 +1105,48 @@ msgstr "Această casetă este destinată notelor dvs. de lucru - instrucțiuni d
 msgid "Notes"
 msgstr "Note"
 
-#: thonny/plugins/object_inspector.py:111
+#: thonny/plugins/object_inspector.py:89
+msgid "Data"
+msgstr ""
+
+#: thonny/plugins/object_inspector.py:90
+#, fuzzy
+msgid "Attributes"
+msgstr "Variabile"
+
+#: thonny/plugins/object_inspector.py:113
 msgid "Previous object"
 msgstr "Obiectul anterior"
 
-#: thonny/plugins/object_inspector.py:114
+#: thonny/plugins/object_inspector.py:116
 msgid "Next object"
 msgstr "Următorul obiect"
 
-#: thonny/plugins/object_inspector.py:704
+#: thonny/plugins/object_inspector.py:461
+#, python-format
+msgid ""
+"The representation above is an approximate value of this float. The exact"
+" stored value is %s which is about %s"
+msgstr ""
+
+#: thonny/plugins/object_inspector.py:512
+#, fuzzy
+msgid "Index"
+msgstr "Găsi"
+
+#: thonny/plugins/object_inspector.py:590
+msgid "Key ID"
+msgstr ""
+
+#: thonny/plugins/object_inspector.py:591
+msgid "Key"
+msgstr ""
+
+#: thonny/plugins/object_inspector.py:707
 msgid "Object inspector"
 msgstr "Inspector de obiecte"
 
-#: thonny/plugins/outline.py:138
+#: thonny/plugins/outline.py:146
 msgid "Outline"
 msgstr "Contur"
 
@@ -379,18 +1154,48 @@ msgstr "Contur"
 msgid "Pygame Zero mode"
 msgstr "Mod Pygame Zero"
 
-#: thonny/plugins/pip_gui.py:78
-msgid "Find package from PyPI"
-msgstr "Găsiți pachetul de la PyPI"
+#: thonny/plugins/pip_gui.py:67
+msgid "Search on PyPI"
+msgstr ""
+
+#: thonny/plugins/esp/__init__.py:367
+#: thonny/plugins/micropython/uf2dialog.py:96 thonny/plugins/pip_gui.py:70
+msgid "Install"
+msgstr "Instalare"
+
+#: thonny/plugins/pip_gui.py:73
+msgid "Upgrade"
+msgstr "Actualizare"
 
 #: thonny/plugins/pip_gui.py:76
 msgid "Uninstall"
 msgstr "Dezinstalați"
 
-#: thonny/editors.py:586 thonny/plugins/pip_gui.py:228 thonny/ui_utils.py:448
-#: thonny/ui_utils.py:1770 thonny/workdlg.py:155
-msgid "Close"
-msgstr "Închide"
+#: thonny/plugins/pip_gui.py:79
+msgid "Delete selected"
+msgstr ""
+
+#: thonny/plugins/pip_gui.py:129
+msgid "INSTALL"
+msgstr "INSTALARE"
+
+#: thonny/plugins/pip_gui.py:333
+msgid "Install from PyPI"
+msgstr "Instalați din PyPI"
+
+#: thonny/plugins/pip_gui.py:336
+msgid ""
+"If you don't know where to get the package from, then most likely you'll "
+"want to search the Python Package Index. Start by entering the name of "
+"the package in the search box above and pressing ENTER."
+msgstr ""
+"Dacă nu știți de unde să obțineți pachetul, atunci cel mai probabil veți "
+"dori să căutați indexul pachetului Python. Începeți prin a introduce "
+"numele pachetului în caseta de căutare de mai sus și apăsați ENTER."
+
+#: thonny/plugins/pip_gui.py:345
+msgid "Install from requirements file"
+msgstr "Instalați din fișierul de cerințe"
 
 #: thonny/plugins/pip_gui.py:347
 msgid "Click "
@@ -400,18 +1205,105 @@ msgstr "Clic "
 msgid "here"
 msgstr "aici"
 
-#: thonny/plugins/pip_gui.py:73
-msgid "Upgrade"
-msgstr "Actualizare"
+#: thonny/plugins/pip_gui.py:352
+msgid "to locate requirements.txt file and install the packages specified in it."
+msgstr ""
+"pentru a localiza fișierul requirements.txt și a instala pachetele "
+"specificate în acesta."
 
-#: thonny/plugins/esp/__init__.py:365
-#: thonny/plugins/micropython/uf2dialog.py:94 thonny/plugins/pip_gui.py:70
-msgid "Install"
-msgstr "Instalare"
+#: thonny/plugins/pip_gui.py:365
+msgid "Browse the packages"
+msgstr "Răsfoiți pachetele"
+
+#: thonny/plugins/pip_gui.py:368
+msgid ""
+"With current interpreter you can only browse the packages here.\n"
+"Use 'Tools → Open system shell...' for installing, upgrading or "
+"uninstalling."
+msgstr ""
+"Cu interpretul curent puteți răsfoi doar pachetele de aici.\n"
+"Utilizați „Instrumente → Deschideți shell-ul de sistem ...” pentru "
+"instalare, actualizare sau dezinstalare."
+
+#: thonny/plugins/pip_gui.py:376
+msgid "Packages' directory"
+msgstr "Directorul pachetelor"
+
+#: thonny/plugins/pip_gui.py:380
+msgid "Install from local file"
+msgstr "Instalați din fișierul local"
+
+#: thonny/plugins/pip_gui.py:381
+msgid "Click"
+msgstr "Clic"
+
+#: thonny/plugins/pip_gui.py:386
+msgid ""
+"to locate and install the package file (usually with .whl, .tar.gz or "
+".zip extension)."
+msgstr ""
+"pentru a localiza și instala fișierul pachetului (de obicei cu extensia "
+".whl, .tar.gz sau .zip)."
+
+#: thonny/plugins/micropython/pip_gui.py:243 thonny/plugins/pip_gui.py:393
+msgid "Upgrade or uninstall"
+msgstr "Actualizați sau dezinstalați"
+
+#: thonny/plugins/pip_gui.py:395
+msgid "Start by selecting the package from the left."
+msgstr "Începeți prin selectarea pachetului din stânga."
+
+#: thonny/plugins/pip_gui.py:399
+msgid "Target:"
+msgstr "Ţintă:"
+
+#: thonny/plugins/pip_gui.py:401
+msgid "virtual environment"
+msgstr "mediu virtual"
+
+#: thonny/plugins/pip_gui.py:403
+msgid "user site packages"
+msgstr "pachetele site-ului utilizatorului"
+
+#: thonny/plugins/pip_gui.py:407
+msgid ""
+"This dialog lists all available packages, but allows upgrading and "
+"uninstalling only packages from"
+msgstr ""
+"Acest dialog listează toate pachetele disponibile, dar permite "
+"actualizarea și dezinstalarea numai a pachetelor din"
+
+#: thonny/plugins/pip_gui.py:417
+msgid ""
+"New packages will be also installed into this directory. Other locations "
+"must be managed by alternative means."
+msgstr ""
+"Pachetele noi vor fi, de asemenea, instalate în acest director. Alte "
+"locații trebuie gestionate prin mijloace alternative."
+
+#: thonny/plugins/pip_gui.py:441
+msgid "Installed version:"
+msgstr "Versiunea instalată:"
+
+#: thonny/plugins/micropython/pip_gui.py:147 thonny/plugins/pip_gui.py:443
+msgid "Installed to:"
+msgstr "Instalat la:"
 
 #: thonny/plugins/pip_gui.py:491
 msgid "Could not find the package from PyPI."
 msgstr "Nu s-a putut găsi pachetul de la PyPI."
+
+#: thonny/plugins/pip_gui.py:494
+msgid "Please check your spelling!"
+msgstr "Vă rugăm să verificați ortografia!"
+
+#: thonny/plugins/pip_gui.py:498
+msgid "Could not find the package info from PyPI."
+msgstr "Nu am putut găsi informațiile despre pachet din PyPI."
+
+#: thonny/plugins/pip_gui.py:500 thonny/plugins/pip_gui.py:1200
+msgid "Error code:"
+msgstr "Cod de eroare:"
 
 #: thonny/plugins/pip_gui.py:511
 msgid "Latest stable version"
@@ -449,605 +1341,194 @@ msgstr "Pagina PyPI"
 msgid "Requires"
 msgstr "Necesită"
 
-#: thonny/plugins/pip_gui.py:652
-msgid "Really uninstall?"
-msgstr "Chiar dezinstalați?"
-
-#: thonny/plugins/pip_gui.py:657
-msgid "Are you sure you want to uninstall it?"
-msgstr "Sigur doriți să îl dezinstalați?"
-
-#: thonny/plugins/variables.py:19
-msgid "Back to\n"
-"current frame"
-msgstr "Înapoi la\n"
-"cadru curent"
-
-#: thonny/plugins/variables.py:138
-msgid "Variables"
-msgstr "Variabile"
-
-#: thonny/base_file_browser.py:1310
-msgid "This computer"
-msgstr "Acest calculator"
-
-#: thonny/base_file_browser.py:617
-msgid "Refresh"
-msgstr "Reîmprospăta"
-
-#: thonny/base_file_browser.py:630
-msgid "Focus into"
-msgstr "Concentrați-vă în"
-
-#: thonny/base_file_browser.py:1161
-msgid "Error"
-msgstr "Eroare"
-
-#: thonny/base_file_browser.py:1161
-msgid "You need to select a file!"
-msgstr "Trebuie să selectați un fișier!"
-
-#: thonny/base_file_browser.py:1165
-msgid "Overwrite?"
-msgstr "Suprascrieți?"
-
-#: thonny/base_file_browser.py:1165
-msgid "Do you want to overwrite '%s' ?"
-msgstr "Doriți să suprascrieți „% s”?"
-
-#: thonny/editors.py:551 thonny/editors.py:553
-msgid "New"
-msgstr "Nou"
-
-#: thonny/editors.py:564
-msgid "Open..."
-msgstr "Deschis..."
-
-#: thonny/editors.py:566
-msgid "Load"
-msgstr "Sarcină"
-
-#: thonny/editors.py:575
-msgid "Recent files"
-msgstr "Fisiere recente"
-
-#: thonny/editors.py:597 thonny/ui_utils.py:450
-msgid "Close all"
-msgstr "Inchide tot"
-
-#: thonny/editors.py:607 thonny/editors.py:609
-msgid "Save"
-msgstr "salva"
-
-#: thonny/editors.py:632
-msgid "Save as..."
-msgstr "Salvează ca..."
-
-#: thonny/editors.py:643
-msgid "Save copy..."
-msgstr "Salvați copia ..."
-
-#: thonny/editors.py:652
-msgid "Rename..."
-msgstr "Redenumiți ..."
-
-#: thonny/config_ui.py:19
-msgid "Thonny options"
-msgstr "Opțiuni Thonny"
-
-#: thonny/running.py:121
-msgid "Run current script"
-msgstr "Rulați scriptul curent"
-
-#: thonny/running.py:152
-msgid "Run current script in terminal"
-msgstr "Rulați scriptul curent în terminal"
-
-#: thonny/running.py:165
-msgid "Stop/Restart backend"
-msgstr "Oprire / Repornire backend"
-
-#: thonny/running.py:166
-msgid "Stop"
-msgstr "Stop"
-
-#: thonny/running.py:177
-msgid "Interrupt execution"
-msgstr "Întrerupe executarea"
-
-#: thonny/running.py:190
-msgid "Send EOF / Soft reboot"
-msgstr "Trimiteți repornirea EOF / Soft"
-
-#: thonny/running.py:201
-msgid "Disconnect"
-msgstr "Deconectat"
-
-#: thonny/running_config_page.py:23
-msgid "Known interpreters"
-msgstr "Interpreți cunoscuți"
-
-#: thonny/running_config_page.py:36
-msgid "Your interpreter isn't in the list?"
-msgstr "Interpretul dvs. nu este pe listă?"
-
-#: thonny/plugins/cpython/__init__.py:391
-msgid "NB! Thonny only supports Python 3.5 and later"
-msgstr "NB! Thonny acceptă doar Python 3.5 și versiunile ulterioare"
-
-#: thonny/running_config_page.py:56
-msgid "Create new virtual environment"
-msgstr "Creați un mediu virtual nou"
-
-#: thonny/running_config_page.py:59
-msgid "Select existing or create a new empty directory"
-msgstr "Selectați existent sau creați un nou director gol"
-
-#: thonny/plugins/cpython/__init__.py:419
-msgid "Python interpreters"
-msgstr "Interpreți Python"
-
-#: thonny/plugins/cpython/__init__.py:420 thonny/plugins/pip_gui.py:696
-#: thonny/plugins/pip_gui.py:709
-msgid "all files"
-msgstr "toate filele"
-
-#: thonny/plugins/cpython/__init__.py:442
-msgid "Select empty directory for new virtual environment"
-msgstr "Selectați directorul gol pentru noul mediu virtual"
-
-#: thonny/plugins/cpython/__init__.py:449
-msgid "Bad directory"
-msgstr "Director greșit"
-
-#: thonny/plugins/cpython/__init__.py:450
-msgid "Selected directory is not empty.\n"
-"Select another or cancel."
-msgstr "Directorul selectat nu este gol.\n"
-"Selectați altul sau anulați."
-
-#: thonny/plugins/cpython/__init__.py:467
-msgid "Creating virtual environment"
-msgstr "Crearea unui mediu virtual"
-
-#: thonny/shell.py:83
-msgid "Clear shell"
-msgstr "Coajă clară"
-
-#: thonny/shell.py:138
-msgid "Plotter"
-msgstr "Plotter"
-
-#: thonny/shell.py:269
-msgid "Clear"
-msgstr "clar"
-
-#: thonny/shell.py:282
-msgid "Show Plotter"
-msgstr "Arată Plotter"
-
-#: thonny/shell.py:1584
-msgid "For performance reasons, Shell avoids showing very long lines in full (see Tools => Options => Shell).\n"
-"Here you can interact with the original text fragment."
-msgstr "Din motive de performanță, Shell evită afișarea liniilor foarte lungi în întregime (consultați Instrumente => Opțiuni => Shell).\n"
-"Aici puteți interacționa cu fragmentul de text original."
-
-#: thonny/shell.py:1595
-msgid "Wrap text (may be slow)"
-msgstr "Wrap text (poate fi lent)"
-
-#: thonny/ui_utils.py:1765
-msgid "Copy to clipboard"
-msgstr "Copiați în clipboard"
-
-#: thonny/shell.py:1431
-msgid "Expand in Shell"
-msgstr "Extindeți în Shell"
-
-#: thonny/shell.py:1637
-msgid "Squeezed text (%d characters)"
-msgstr "Text stors (% d caractere)"
-
-#: thonny/shell.py:1806
-msgid "Plotter visualizes series of\n"
-"numbers printed to the Shell."
-msgstr "Plotter vizualizează serii de\n"
-"numere tipărite pe Shell."
-
-#: thonny/shell.py:1808
-msgid "See Help for details."
-msgstr "Consultați Ajutor pentru detalii."
-
-#: thonny/ui_utils.py:449
-msgid "Close others"
-msgstr "Închide altele"
-
-#: thonny/ui_utils.py:1621
-msgid "Copying"
-msgstr "Copiere"
-
-#: thonny/ui_utils.py:1624
-msgid "Copying\n"
-"  %s\n"
-"to\n"
-"  %s"
-msgstr "Copiere\n"
-"  % s\n"
-"la\n"
-"  % s"
-
-#: thonny/config_ui.py:36 thonny/plugins/backend_config_page.py:273
-#: thonny/plugins/pip_gui.py:1141 thonny/ui_utils.py:114
-#: thonny/ui_utils.py:1632 thonny/workdlg.py:157 thonny/workdlg.py:201
-msgid "Cancel"
-msgstr "Anulare"
-
-#: thonny/config_ui.py:35 thonny/plugins/backend_config_page.py:268
-#: thonny/ui_utils.py:111 thonny/workdlg.py:198
-msgid "OK"
-msgstr "O.K"
-
-#: thonny/ui_utils.py:1783
-msgid "Cancel the process?"
-msgstr "Anulați procesul?"
-
-#: thonny/ui_utils.py:1784
-msgid "The process is still running.\n"
-"Are you sure you want to cancel?"
-msgstr "Procesul este încă în desfășurare.\n"
-"Esti sigur ca vrei sa anulezi?"
-
-#: thonny/ui_utils.py:2197
-msgid "Select All"
-msgstr "Selectează tot"
-
-#: thonny/plugins/shell_config_page.py:73 thonny/workbench.py:157
-msgid "Shell"
-msgstr "Coajă"
-
-#: thonny/plugins/cpython/__init__.py:602
-msgid "The same interpreter which runs Thonny (default)"
-msgstr "Același interpret care execută Thonny (implicit)"
-
-#: thonny/plugins/cpython/__init__.py:350
-msgid "This virtual environment is automatically maintained by Thonny.\n"
-""
-msgstr "Acest mediu virtual este întreținut automat de Thonny.\n"
-""
-
-#: thonny/plugins/cpython/__init__.py:351
-msgid "Location: "
-msgstr "Locație: "
-
-#: thonny/workbench.py:581
-msgid "Options..."
-msgstr "Opțiuni..."
-
-#: thonny/workbench.py:588
-msgid "Increase font size"
-msgstr "Măriți dimensiunea fontului"
-
-#: thonny/workbench.py:653
-msgid "Change font size"
-msgstr "Schimba marimea fontului"
-
-#: thonny/workbench.py:654
-msgid "Zoom"
-msgstr "Zoom"
-
-#: thonny/workbench.py:663
-msgid "Exit Thonny"
-msgstr "Ieșiți din Thonny"
-
-#: thonny/workbench.py:666
-msgid "Quit"
-msgstr "Părăsi"
-
-#: thonny/workbench.py:1170 thonny/workbench.py:1178
-msgid "Overwriting theme '%s'"
-msgstr "Suprascrierea temei „% s”"
-
-#: thonny/workbench.py:1337
-msgid "Program arguments:"
-msgstr "Argumente ale programului:"
-
-#: thonny/workbench.py:1391
-msgid "Regular mode"
-msgstr "Mod regulat"
-
-#: thonny/workbench.py:1392
-msgid "Configuration has been updated. Restart Thonny to start working in regular mode.\n"
-"\n"
-"(See 'Tools → Options → General' if you change your mind later.)"
-msgstr "Configurarea a fost actualizată. Reporniți Thonny pentru a începe să lucrați în modul normal.\n"
-"\n"
-"(Consultați „Instrumente → Opțiuni → General” dacă vă răzgândiți mai târziu.)"
-
-#: thonny/plugins/ast_view.py:210
-msgid "Program tree"
-msgstr "Arborele programului"
-
-#: thonny/plugins/backend_config_page.py:323
-msgid "Select interpreter"
-msgstr "Selectați interpret"
-
-#: thonny/plugins/debugger.py:1279
-msgid "Resume"
-msgstr "Relua"
-
-#: thonny/plugins/debugger.py:1295
-msgid "Run / resume"
-msgstr "Rulați / reluați"
-
-#: thonny/plugins/debugger.py:1310
-msgid "Debug current script"
-msgstr "Depanare script curent"
-
-#: thonny/plugins/debugger.py:1312
-msgid "Debug"
-msgstr "Depanare"
-
-#: thonny/plugins/debugger.py:1323
-msgid "Debug current script (nicer)"
-msgstr "Depanare script curent (mai frumos)"
-
-#: thonny/plugins/debugger.py:1335
-msgid "Debug current script (faster)"
-msgstr "Depanare script curent (mai rapid)"
-
-#: thonny/plugins/debugger.py:1346
-msgid "Step over"
-msgstr "Pas peste"
-
-#: thonny/plugins/debugger.py:1348
-msgid "Over"
-msgstr "Peste"
-
-#: thonny/plugins/debugger.py:1359
-msgid "Step into"
-msgstr "Pășește înăuntru"
-
-#: thonny/plugins/debugger.py:1361
-msgid "Into"
-msgstr "În"
-
-#: thonny/plugins/debugger.py:1372
-msgid "Step out"
-msgstr "Iesi afara"
-
-#: thonny/plugins/debugger.py:1374
-msgid "Out"
-msgstr "Afară"
-
-#: thonny/plugins/debugger.py:1409
-msgid "Step back"
-msgstr "Intoarce-te"
-
-#: thonny/plugins/debugger.py:1411
-msgid "Back"
-msgstr "Înapoi"
-
-#: thonny/plugins/debugger.py:1417
-msgid "Stack"
-msgstr "Grămadă"
-
-#: thonny/plugins/debugger.py:1418
-msgid "Exception"
-msgstr "Excepție"
-
-#: thonny/plugins/general_config_page.py:17
-msgid "Log program usage events"
-msgstr "Înregistrați evenimente de utilizare a programului"
-
-#: thonny/plugins/general_config_page.py:33
-msgid "Debug mode (provides more detailed diagnostic logs)"
-msgstr "Mod de depanare (oferă jurnale de diagnostic mai detaliate)"
-
-#: thonny/plugins/general_config_page.py:57
-msgid "UI mode"
-msgstr "Mod UI"
-
-#: thonny/plugins/general_config_page.py:70
-msgid "UI scaling factor"
-msgstr "Factor de scalare UI"
-
-#: thonny/plugins/general_config_page.py:89
-msgid "NB! Restart Thonny after changing these options!"
-msgstr "NB! Reporniți Thonny după schimbarea acestor opțiuni!"
-
-#: thonny/plugins/general_config_page.py:104
-msgid "General"
-msgstr "General"
-
-#: thonny/plugins/pip_gui.py:129
-msgid "INSTALL"
-msgstr "INSTALARE"
-
-#: thonny/plugins/pip_gui.py:365
-msgid "Browse the packages"
-msgstr "Răsfoiți pachetele"
-
-#: thonny/plugins/pip_gui.py:368
-msgid "With current interpreter you can only browse the packages here.\n"
-"Use 'Tools → Open system shell...' for installing, upgrading or uninstalling."
-msgstr "Cu interpretul curent puteți răsfoi doar pachetele de aici.\n"
-"Utilizați „Instrumente → Deschideți shell-ul de sistem ...” pentru instalare, actualizare sau dezinstalare."
-
-#: thonny/plugins/pip_gui.py:376
-msgid "Packages' directory"
-msgstr "Directorul pachetelor"
-
-#: thonny/plugins/pip_gui.py:333
-msgid "Install from PyPI"
-msgstr "Instalați din PyPI"
-
-#: thonny/plugins/pip_gui.py:336
-msgid "If you don't know where to get the package from, then most likely you'll want to search the Python Package Index. Start by entering the name of the package in the search box above and pressing ENTER."
-msgstr "Dacă nu știți de unde să obțineți pachetul, atunci cel mai probabil veți dori să căutați indexul pachetului Python. Începeți prin a introduce numele pachetului în caseta de căutare de mai sus și apăsați ENTER."
-
-#: thonny/plugins/pip_gui.py:352
-msgid "to locate requirements.txt file and install the packages specified in it."
-msgstr "pentru a localiza fișierul requirements.txt și a instala pachetele specificate în acesta."
-
-#: thonny/plugins/pip_gui.py:381
-msgid "Click"
-msgstr "Clic"
-
-#: thonny/plugins/pip_gui.py:386
-msgid "to locate and install the package file (usually with .whl, .tar.gz or .zip extension)."
-msgstr "pentru a localiza și instala fișierul pachetului (de obicei cu extensia .whl, .tar.gz sau .zip)."
-
-#: thonny/plugins/micropython/pip_gui.py:243 thonny/plugins/pip_gui.py:393
-msgid "Upgrade or uninstall"
-msgstr "Actualizați sau dezinstalați"
-
-#: thonny/plugins/pip_gui.py:395
-msgid "Start by selecting the package from the left."
-msgstr "Începeți prin selectarea pachetului din stânga."
-
-#: thonny/plugins/pip_gui.py:399
-msgid "Target:"
-msgstr "Ţintă:"
-
-#: thonny/plugins/pip_gui.py:401
-msgid "virtual environment"
-msgstr "mediu virtual"
-
-#: thonny/plugins/pip_gui.py:403
-msgid "user site packages"
-msgstr "pachetele site-ului utilizatorului"
-
-#: thonny/plugins/pip_gui.py:407
-msgid "This dialog lists all available packages, but allows upgrading and uninstalling only packages from"
-msgstr "Acest dialog listează toate pachetele disponibile, dar permite actualizarea și dezinstalarea numai a pachetelor din"
-
-#: thonny/plugins/pip_gui.py:417
-msgid "New packages will be also installed into this directory. Other locations must be managed by alternative means."
-msgstr "Pachetele noi vor fi, de asemenea, instalate în acest director. Alte locații trebuie gestionate prin mijloace alternative."
-
-#: thonny/plugins/pip_gui.py:441
-msgid "Installed version:"
-msgstr "Versiunea instalată:"
-
-#: thonny/plugins/micropython/pip_gui.py:147 thonny/plugins/pip_gui.py:443
-msgid "Installed to:"
-msgstr "Instalat la:"
-
-#: thonny/plugins/pip_gui.py:494
-msgid "Please check your spelling!"
-msgstr "Vă rugăm să verificați ortografia!"
-
-#: thonny/plugins/pip_gui.py:512
-msgid "You need to enter"
-msgstr "Trebuie să intri"
-
-#: thonny/plugins/pip_gui.py:498
-msgid "Could not find the package info from PyPI."
-msgstr "Nu am putut găsi informațiile despre pachet din PyPI."
-
-#: thonny/plugins/pip_gui.py:500 thonny/plugins/pip_gui.py:1195
-msgid "Error code:"
-msgstr "Cod de eroare:"
+#: thonny/plugins/pip_gui.py:557
+msgid "Search results"
+msgstr ""
+
+#: thonny/plugins/pip_gui.py:558
+msgid "Searching"
+msgstr ""
 
 #: thonny/plugins/pip_gui.py:601
 msgid "Can't find package name from the list:"
 msgstr "Nu pot găsi numele pachetului din listă:"
 
+#: thonny/plugins/pip_gui.py:639 thonny/plugins/pip_gui.py:729
+#, python-format
+msgid "Installing '%s'"
+msgstr ""
+
+#: thonny/plugins/pip_gui.py:645
+#, python-format
+msgid "Upgrading '%s'"
+msgstr ""
+
+#: thonny/plugins/pip_gui.py:650
+#, python-format
+msgid "Uninstalling '%s'"
+msgstr ""
+
+#: thonny/plugins/pip_gui.py:652
+msgid "Really uninstall?"
+msgstr "Chiar dezinstalați?"
+
 #: thonny/plugins/pip_gui.py:653
 msgid "Package '{}' is required for installing and uninstalling other packages."
-msgstr "Pachetul „{}” este necesar pentru instalarea și dezinstalarea altor pachete."
+msgstr ""
+"Pachetul „{}” este necesar pentru instalarea și dezinstalarea altor "
+"pachete."
+
+#: thonny/plugins/pip_gui.py:657
+msgid "Are you sure you want to uninstall it?"
+msgstr "Sigur doriți să îl dezinstalați?"
+
+#: thonny/plugins/pip_gui.py:663
+msgid "Installing"
+msgstr ""
 
 #: thonny/plugins/pip_gui.py:696
 msgid "Package"
 msgstr "Pachet"
 
+#: thonny/plugins/cpython/__init__.py:425 thonny/plugins/pip_gui.py:696
+#: thonny/plugins/pip_gui.py:709
+msgid "all files"
+msgstr "toate filele"
+
 #: thonny/plugins/pip_gui.py:796
+#, python-format
 msgid "Manage packages for %s"
 msgstr "Gestionați pachetele pentru% s"
 
-#: thonny/plugins/pip_gui.py:867
+#: thonny/plugins/pip_gui.py:872
 msgid "Confirmation"
 msgstr "Confirmare"
 
-#: thonny/plugins/pip_gui.py:868
-msgid "Looks like you are installing a Thonny-related package.\n"
+#: thonny/plugins/pip_gui.py:873
+#, python-format
+msgid ""
+"Looks like you are installing a Thonny-related package.\n"
 "If you meant to install a Thonny plugin, then you should\n"
 "choose 'Tools → Manage plugins...' instead\n"
 "\n"
 "Are you sure you want to install %s for the back-end?"
-msgstr "Se pare că instalați un pachet legat de Thonny.\n"
+msgstr ""
+"Se pare că instalați un pachet legat de Thonny.\n"
 "Dacă intenționați să instalați un plugin Thonny, atunci ar trebui\n"
 "alegeți „Instrumente → Gestionați pluginurile ...” în schimb\n"
 "\n"
 "Sigur doriți să instalați% s pentru back-end?"
 
-#: thonny/plugins/pip_gui.py:976
-msgid "NB! There may be another version available which is compatible with current Thonny version. Click on '...' button to choose the version to install."
-msgstr "NB! S-ar putea să existe o altă versiune disponibilă, care să fie compatibilă cu versiunea actuală Thonny. Faceți clic pe butonul „...” pentru a alege versiunea de instalat."
+#: thonny/plugins/pip_gui.py:981
+msgid ""
+"NB! There may be another version available which is compatible with "
+"current Thonny version. Click on '...' button to choose the version to "
+"install."
+msgstr ""
+"NB! S-ar putea să existe o altă versiune disponibilă, care să fie "
+"compatibilă cu versiunea actuală Thonny. Faceți clic pe butonul „...” "
+"pentru a alege versiunea de instalat."
 
-#: thonny/plugins/pip_gui.py:984
+#: thonny/plugins/pip_gui.py:989
 msgid "Thonny plugin without requirements"
 msgstr "Plugin Thonny fără cerințe"
 
-#: thonny/plugins/pip_gui.py:985
-msgid "Looks like you are trying to install an outdated Thonny\n"
+#: thonny/plugins/pip_gui.py:990
+msgid ""
+"Looks like you are trying to install an outdated Thonny\n"
 "plug-in (it doesn't specify required Thonny version).\n"
 "\n"
 "If you still want it, then please install it from the command line."
-msgstr "Se pare că încercați să instalați un Thonny învechit\n"
+msgstr ""
+"Se pare că încercați să instalați un Thonny învechit\n"
 "plug-in (nu specifică versiunea Thonny necesară).\n"
 "\n"
 "Dacă îl mai doriți, atunci vă rugăm să îl instalați din linia de comandă."
 
-#: thonny/plugins/pip_gui.py:999
+#: thonny/plugins/pip_gui.py:1004
 msgid "Unsuitable requirements"
 msgstr "Cerințe nepotrivite"
 
-#: thonny/plugins/pip_gui.py:1000
+#: thonny/plugins/pip_gui.py:1005
 msgid "This package requires different Thonny version:"
 msgstr "Acest pachet necesită o versiune Thonny diferită:"
 
-#: thonny/plugins/pip_gui.py:1004
+#: thonny/plugins/pip_gui.py:1009
 msgid "If you still want it, then please install it from the command line."
 msgstr "Dacă îl mai doriți, atunci vă rugăm să îl instalați din linia de comandă."
 
-#: thonny/plugins/pip_gui.py:1047
-msgid "(In this case Thonny's back-end uses same interpreter, so both dialogs manage same packages.)"
-msgstr "(În acest caz, back-end-ul lui Thonny folosește același interpret, deci ambele dialoguri gestionează aceleași pachete.)"
+#: thonny/plugins/pip_gui.py:1038
+msgid ""
+"This dialog is for managing Thonny plug-ins and their dependencies.\n"
+"If you want to install packages for your own programs then choose 'Tools "
+"→ Manage packages...'"
+msgstr ""
+"Acest dialog este destinat gestionării pluginurilor Thonny și a "
+"dependențelor acestora.\n"
+"Dacă doriți să instalați pachete pentru propriile programe, alegeți "
+"„Instrumente → Gestionați pachetele ...”"
 
-#: thonny/plugins/pip_gui.py:1053
-msgid "NB! You need to restart Thonny after installing / upgrading / uninstalling a plug-in."
-msgstr "NB! Trebuie să reporniți Thonny după instalarea / actualizarea / dezinstalarea unui plug-in."
+#: thonny/plugins/pip_gui.py:1052
+msgid ""
+"(In this case Thonny's back-end uses same interpreter, so both dialogs "
+"manage same packages.)"
+msgstr ""
+"(În acest caz, back-end-ul lui Thonny folosește același interpret, deci "
+"ambele dialoguri gestionează aceleași pachete.)"
 
-#: thonny/plugins/pip_gui.py:1063
+#: thonny/plugins/pip_gui.py:1058
+msgid ""
+"NB! You need to restart Thonny after installing / upgrading / "
+"uninstalling a plug-in."
+msgstr ""
+"NB! Trebuie să reporniți Thonny după instalarea / actualizarea / "
+"dezinstalarea unui plug-in."
+
+#: thonny/plugins/pip_gui.py:1068
 msgid "Thonny plug-ins"
 msgstr "Pluginuri Thonny"
 
-#: thonny/plugins/pip_gui.py:1085
+#: thonny/plugins/pip_gui.py:1090
 msgid "Advanced install / upgrade / downgrade"
 msgstr "Instalare / upgrade / downgrade avansat"
 
-#: thonny/plugins/pip_gui.py:1094
+#: thonny/plugins/pip_gui.py:1099
 msgid "Desired version"
 msgstr "Versiunea dorită"
 
-#: thonny/plugins/pip_gui.py:1132
+#: thonny/plugins/pip_gui.py:1137
 msgid "Upgrade dependencies"
 msgstr "Actualizați dependențele"
 
-#: thonny/plugins/pip_gui.py:1193
+#: thonny/plugins/pip_gui.py:1198
 msgid "Requires:"
 msgstr "Necesită:"
 
-#: thonny/plugins/pip_gui.py:1197
+#: thonny/plugins/pip_gui.py:1202
 msgid "Error:"
 msgstr "Eroare:"
 
-#: thonny/plugins/pip_gui.py:1400
+#: thonny/plugins/pip_gui.py:1372
+msgid "Package manager is not available for this interpreter"
+msgstr ""
+
+#: thonny/plugins/pip_gui.py:1385
+msgid "Not supported"
+msgstr ""
+
+#: thonny/plugins/micropython/pip_gui.py:290 thonny/plugins/pip_gui.py:1390
+msgid "Not available"
+msgstr ""
+
+#: thonny/plugins/pip_gui.py:1391
+msgid "You need to stop your program before launching the package manager."
+msgstr ""
+
+#: thonny/plugins/pip_gui.py:1409
 msgid "Manage packages..."
 msgstr "Gestionați pachetele ..."
 
-#: thonny/plugins/pip_gui.py:1406
+#: thonny/plugins/pip_gui.py:1415
 msgid "Manage plug-ins..."
 msgstr "Gestionați pluginurile ..."
 
@@ -1057,7 +1538,9 @@ msgstr "Deschideți redarea ..."
 
 #: thonny/plugins/run_debug_config_page.py:14
 msgid "Change working directory to script directory on Run / Debug"
-msgstr "Schimbați directorul de lucru în directorul de scripturi în Executare / Depanare"
+msgstr ""
+"Schimbați directorul de lucru în directorul de scripturi în Executare / "
+"Depanare"
 
 #: thonny/plugins/run_debug_config_page.py:22
 msgid "Show function calls (frames) in separate windows"
@@ -1072,12 +1555,18 @@ msgid "Open and close Stack view automatically"
 msgstr "Deschideți și închideți automat vizualizarea Stack"
 
 #: thonny/plugins/run_debug_config_page.py:30
-msgid "Opens the Stack view on first call and closes it when program returns to main frame."
-msgstr "Deschide vizualizarea Stack la primul apel și o închide când programul revine la cadrul principal."
+msgid ""
+"Opens the Stack view on first call and closes it when program returns to "
+"main frame."
+msgstr ""
+"Deschide vizualizarea Stack la primul apel și o închide când programul "
+"revine la cadrul principal."
 
 #: thonny/plugins/run_debug_config_page.py:39
 msgid "Allow stepping into libraries (ie. outside of main script directory)"
-msgstr "Permiteți pășirea în biblioteci (adică în afara directorului principal de script)"
+msgstr ""
+"Permiteți pășirea în biblioteci (adică în afara directorului principal de"
+" script)"
 
 #: thonny/plugins/run_debug_config_page.py:40
 msgid "May make debugging slower."
@@ -1123,6 +1612,10 @@ msgstr "NB! Valorile mari pot cauza performanțe slabe!"
 msgid "Maximum length of line fragments before squeezing"
 msgstr "Lungimea maximă a fragmentelor de linie înainte de stoarcere"
 
+#: thonny/plugins/shell_config_page.py:64
+msgid "Open evaluated values in Object inspector"
+msgstr ""
+
 #: thonny/plugins/terminal_config_page.py:12
 msgid "Running current script in terminal"
 msgstr "Rularea scriptului curent în terminal"
@@ -1136,9 +1629,11 @@ msgid "Keep terminal window open after Python process ends"
 msgstr "Păstrați fereastra terminalului deschisă după terminarea procesului Python"
 
 #: thonny/plugins/terminal_config_page.py:31
-msgid "NB! Automatic closing needs to be enabled in Terminal's settings\n"
+msgid ""
+"NB! Automatic closing needs to be enabled in Terminal's settings\n"
 "(Profiles → Shell → When the shell exits)"
-msgstr "NB! Închiderea automată trebuie activată în setările terminalului\n"
+msgstr ""
+"NB! Închiderea automată trebuie activată în setările terminalului\n"
 "(Profiluri → Shell → Când shell-ul iese)"
 
 #: thonny/plugins/terminal_config_page.py:41
@@ -1201,91 +1696,102 @@ msgstr "Deschideți folderul programului Thonny ..."
 msgid "Open Thonny data folder..."
 msgstr "Deschideți folderul de date Thonny ..."
 
-#: thonny/plugins/help/__init__.py:64
-msgid "Home"
-msgstr "Acasă"
+#: thonny/plugins/variables.py:19
+msgid ""
+"Back to\n"
+"current frame"
+msgstr ""
+"Înapoi la\n"
+"cadru curent"
 
-#: thonny/plugins/help/__init__.py:75
-msgid "Help contents"
-msgstr "Conținut de ajutor"
+#: thonny/plugins/variables.py:36
+#, python-format
+msgid ""
+"Back to\n"
+"%s"
+msgstr ""
 
-#: thonny/plugins/micropython/__init__.py:274
-msgid "CircuitPython device"
-msgstr "Dispozitiv CircuitPython"
-
-#: thonny/plugins/micropython/__init__.py:278
-msgid "MicroPython device"
-msgstr "Dispozitiv MicroPython"
-
-#: thonny/plugins/micropython/__init__.py:474
-msgid "Connect your device to the computer and select corresponding port below"
-msgstr "Conectați dispozitivul la computer și selectați portul corespunzător de mai jos"
-
-#: thonny/plugins/micropython/__init__.py:477
-msgid "look for your device name, \"USB Serial\" or \"UART\""
-msgstr "căutați numele dispozitivului dvs., „Seria USB” sau „UART”"
-
-#: thonny/plugins/micropython/__init__.py:479
-msgid "If you can't find it, you may need to install proper USB driver first."
-msgstr "Dacă nu îl găsiți, poate fi necesar să instalați mai întâi un driver USB adecvat."
-
-#: thonny/plugins/micropython/__init__.py:400
-msgid "Port"
-msgstr "Port"
-
-#: thonny/plugins/micropython/__init__.py:409
-msgid "Try to detect port automatically"
-msgstr "Încercați să detectați automat portul"
-
-#: thonny/plugins/micropython/__init__.py:952
-msgid "MicroPython (generic)"
-msgstr "MicroPython (generic)"
-
-#: thonny/plugins/printing/__init__.py:82
-msgid "Print..."
-msgstr "Imprimare..."
-
-#: thonny/plugins/system_shell/__init__.py:59
-msgid "Open system shell..."
-msgstr "Deschideți shell-ul sistemului ..."
-
-#: thonny/plugins/backend_config_page.py:103
-msgid "Details"
-msgstr "Detalii"
-
-#: thonny/plugins/pip_gui.py:345
-msgid "Install from requirements file"
-msgstr "Instalați din fișierul de cerințe"
-
-#: thonny/plugins/pip_gui.py:380
-msgid "Install from local file"
-msgstr "Instalați din fișierul local"
-
-#: thonny/plugins/pip_gui.py:1033
-msgid "This dialog is for managing Thonny plug-ins and their dependencies.\n"
-"If you want to install packages for your own programs then choose 'Tools → Manage packages...'"
-msgstr "Acest dialog este destinat gestionării pluginurilor Thonny și a dependențelor acestora.\n"
-"Dacă doriți să instalați pachete pentru propriile programe, alegeți „Instrumente → Gestionați pachetele ...”"
+#: thonny/plugins/variables.py:73 thonny/plugins/variables.py:75
+#: thonny/plugins/variables.py:138
+msgid "Variables"
+msgstr "Variabile"
 
 #: thonny/plugins/circuitpython/__init__.py:163
 msgid "CircuitPython (generic)"
 msgstr "CircuitPython (generic)"
 
-#: thonny/plugins/commenting_indenting.py:124
-msgid "Indent selected lines"
-msgstr "Indentați liniile selectate"
+#: thonny/plugins/cpython/__init__.py:355
+msgid "This virtual environment is automatically maintained by Thonny.\n"
+msgstr "Acest mediu virtual este întreținut automat de Thonny.\n"
 
-#: thonny/plugins/commenting_indenting.py:134
-msgid "Dedent selected lines"
-msgstr "Dedentează liniile selectate"
+#: thonny/plugins/cpython/__init__.py:356
+msgid "Location: "
+msgstr "Locație: "
 
-#: thonny/workbench.py:1380
-msgid "Switch to\n"
-"regular\n"
-"mode"
-msgstr "Schimba cu\n"
-"regulat\n"
-"modul"
+#: thonny/plugins/cpython/__init__.py:375
+msgid "Python executable"
+msgstr ""
+
+#: thonny/plugins/cpython/__init__.py:396
+msgid "NB! Thonny only supports Python 3.5 and later"
+msgstr "NB! Thonny acceptă doar Python 3.5 și versiunile ulterioare"
+
+#: thonny/plugins/cpython/__init__.py:398
+msgid ""
+"NB! File selection button may not work properly when selecting "
+"executables\n"
+"from a virtual environment. In this case choose the 'activate' script "
+"instead\n"
+"of the interpreter (or enter the path directly to the box)!"
+msgstr ""
+
+#: thonny/plugins/cpython/__init__.py:424
+msgid "Python interpreters"
+msgstr "Interpreți Python"
+
+#: thonny/plugins/cpython/__init__.py:453
+msgid "Select empty directory for new virtual environment"
+msgstr "Selectați directorul gol pentru noul mediu virtual"
+
+#: thonny/plugins/cpython/__init__.py:460
+msgid "Bad directory"
+msgstr "Director greșit"
+
+#: thonny/plugins/cpython/__init__.py:461
+msgid ""
+"Selected directory is not empty.\n"
+"Select another or cancel."
+msgstr ""
+"Directorul selectat nu este gol.\n"
+"Selectați altul sau anulați."
+
+#: thonny/plugins/cpython/__init__.py:478
+msgid "Creating virtual environment"
+msgstr "Crearea unui mediu virtual"
+
+#: thonny/plugins/cpython/__init__.py:636
+msgid "The same interpreter which runs Thonny (default)"
+msgstr "Același interpret care execută Thonny (implicit)"
+
+#: thonny/plugins/cpython/__init__.py:644
+msgid "Alternative Python 3 interpreter or virtual environment"
+msgstr "Interpret alternativ Python 3 sau mediu virtual"
+
+#: thonny/plugins/cpython/__init__.py:652
+msgid "A special virtual environment (deprecated)"
+msgstr "Un mediu virtual special (nerecomandat)"
+
+#: thonny/plugins/cpython_ssh/__init__.py:153
+msgid "Remote Python 3 (SSH)"
+msgstr ""
+
+#: thonny/plugins/help/__init__.py:70
+msgid "Home"
+msgstr "Acasă"
+
+#: thonny/plugins/help/__init__.py:81
+msgid "Help contents"
+msgstr "Conținut de ajutor"
 
 #: thonny/plugins/microbit/__init__.py:55
 msgid "Make sure MicroPython has been installed to your micro:bit."
@@ -1293,281 +1799,71 @@ msgstr "Asigurați-vă că MicroPython a fost instalat pe micro: bit."
 
 #: thonny/plugins/microbit/__init__.py:57
 msgid "Don't forget that main.py only works without embedded main script."
-msgstr "Nu uitați că main.py funcționează numai fără scriptul principal încorporat."
-
-#: thonny/plugins/micropython/uf2dialog.py:45
-msgid "please wait"
-msgstr "te rog asteapta"
-
-#: thonny/plugins/microbit/__init__.py:199
-msgid "Done!"
-msgstr "Terminat!"
-
-#: thonny/plugins/micropython/__init__.py:298
-msgid "Firmware"
-msgstr "Firmware"
-
-#: thonny/misc_utils.py:134
-msgid "Could not find disk '%s'. Do you want to locate it yourself?"
-msgstr "Nu s-a putut găsi discul '% s'. Vrei să-l localizezi singur?"
-
-#: thonny/misc_utils.py:137
-msgid "Found several '%s' disks. Do you want to choose one yourself?"
-msgstr "S-au găsit mai multe discuri „% s”. Vrei să alegi unul singur?"
-
-#: thonny/misc_utils.py:153
-msgid "Can't find suitable disk"
-msgstr "Nu pot găsi discul potrivit"
-
-#: thonny/base_file_browser.py:273
-msgid "%d items"
-msgstr "% d articole"
-
-#: thonny/base_file_browser.py:691
-msgid "Move to Recycle Bin"
-msgstr "Treceți la Coșul de reciclare"
-
-#: thonny/base_file_browser.py:693
-msgid "Move to Trash"
-msgstr "Aruncă la gunoi"
-
-#: thonny/base_file_browser.py:696
-msgid "Delete"
-msgstr "Șterge"
-
-#: thonny/base_file_browser.py:699
-msgid "New directory"
-msgstr "Director nou"
-
-#: thonny/base_file_browser.py:702
-msgid "Properties"
-msgstr "Proprietăți"
-
-#: thonny/base_file_browser.py:704
-msgid "Storage space"
-msgstr "Spatiu de depozitare"
-
-#: thonny/base_file_browser.py:714
-msgid "Path"
-msgstr "cale"
-
-#: thonny/base_file_browser.py:716
-msgid "Directory properties"
-msgstr "Proprietățile directorului"
-
-#: thonny/base_file_browser.py:718
-msgid "File properties"
-msgstr "Proprietățile fișierului"
-
-#: thonny/base_file_browser.py:720
-msgid "bytes"
-msgstr "octeți"
-
-#: thonny/base_file_browser.py:723
-msgid "Size"
-msgstr "mărimea"
-
-#: thonny/base_file_browser.py:734
-msgid "Modified"
-msgstr "Modificat"
-
-#: thonny/base_file_browser.py:793
-msgid "Deleting %s"
-msgstr "Se șterge% s"
-
-#: thonny/base_file_browser.py:816
-msgid "Moving %s to %s"
-msgstr "Se mută% s la% s"
-
-#: thonny/editors.py:219
-msgid "Loading"
-msgstr "Se încarcă"
-
-#: thonny/editors.py:335
-msgid "Saving"
-msgstr "Economisire"
-
-#: thonny/running.py:1408
-msgid "Working..."
-msgstr "Lucru..."
-
-#: thonny/plugins/files.py:199
-msgid "Uploading %s to %s"
-msgstr "Se încarcă% s în% s"
-
-#: thonny/plugins/files.py:215
-msgid "Upload to %s"
-msgstr "Încărcați în% s"
-
-#: thonny/plugins/files.py:362
-msgid "Downloading %s to %s"
-msgstr "Se descarcă% s în% s"
-
-#: thonny/plugins/files.py:275
-msgid "Download to %s"
-msgstr "Descărcați în% s"
-
-#: thonny/base_file_browser.py:619
-msgid "Open in system file manager"
 msgstr ""
+"Nu uitați că main.py funcționează numai fără scriptul principal "
+"încorporat."
 
-#: thonny/base_file_browser.py:624
-msgid "Hide hidden files"
-msgstr ""
+#: thonny/plugins/micropython/__init__.py:282
+msgid "CircuitPython device"
+msgstr "Dispozitiv CircuitPython"
 
-#: thonny/base_file_browser.py:624
-msgid "Show hidden files"
-msgstr ""
+#: thonny/plugins/micropython/__init__.py:286
+msgid "MicroPython device"
+msgstr "Dispozitiv MicroPython"
 
-#: thonny/base_file_browser.py:634
-msgid "Open in Thonny"
-msgstr ""
-
-#: thonny/base_file_browser.py:639 thonny/base_file_browser.py:660
-msgid "Open in system default app"
-msgstr ""
-
-#: thonny/base_file_browser.py:646 thonny/base_file_browser.py:668
-msgid "Configure %s files"
-msgstr ""
-
-#: thonny/base_file_browser.py:669
-msgid "What to do with a %s file when you double-click it in Thonny's file browser?"
-msgstr ""
-
-#: thonny/base_file_browser.py:1039 thonny/plugins/micropython/pip_gui.py:77
-msgid "Deleting"
-msgstr ""
-
-#: thonny/base_file_browser.py:1046
-msgid "Creating directory"
-msgstr ""
-
-#: thonny/editors.py:217
-msgid "Loading %s"
-msgstr ""
-
-#: thonny/editors.py:333
-msgid "Saving to %s"
-msgstr ""
-
-#: thonny/editors.py:621 thonny/editors.py:623
-msgid "Save All files"
-msgstr ""
-
-#: thonny/workbench.py:817
-msgid "Configure interpreter..."
-msgstr ""
-
-#: thonny/workbench.py:1490
-msgid "Device"
-msgstr ""
-
-#: thonny/workdlg.py:185
-msgid "Cancelling"
-msgstr ""
-
-#: thonny/workdlg.py:212
-msgid "Starting"
-msgstr ""
-
-#: thonny/plugins/assistant_config_page.py:17
-msgid "Friendly traceback level"
-msgstr ""
-
-#: thonny/plugins/backend_config_page.py:234
-msgid "Authentication"
-msgstr ""
-
-#: thonny/plugins/backend_config_page.py:236
-msgid "Enter the passphrase of your private key for\n"
-"{}"
-msgstr ""
-
-#: thonny/plugins/backend_config_page.py:239
-msgid "Enter your password for\n"
-"{}"
-msgstr ""
-
-#: thonny/plugins/object_inspector.py:458
-msgid "The representation above is an approximate value of this float. The exact stored value is %s which is about %s"
-msgstr ""
-
-#: thonny/plugins/pip_gui.py:557
-msgid "Search results"
-msgstr ""
-
-#: thonny/plugins/pip_gui.py:558
-msgid "Searching"
-msgstr ""
-
-#: thonny/plugins/pip_gui.py:639 thonny/plugins/pip_gui.py:729
-msgid "Installing '%s'"
-msgstr ""
-
-#: thonny/plugins/pip_gui.py:645
-msgid "Upgrading '%s'"
-msgstr ""
-
-#: thonny/plugins/pip_gui.py:650
-msgid "Uninstalling '%s'"
-msgstr ""
-
-#: thonny/plugins/pip_gui.py:663
-msgid "Installing"
-msgstr ""
-
-#: thonny/plugins/pip_gui.py:1363
-msgid "Package manager is not available for this interpreter"
-msgstr ""
-
-#: thonny/plugins/pip_gui.py:1376
-msgid "Not supported"
-msgstr ""
-
-#: thonny/plugins/micropython/pip_gui.py:290 thonny/plugins/pip_gui.py:1381
-msgid "Not available"
-msgstr ""
-
-#: thonny/plugins/pip_gui.py:1382
-msgid "You need to stop your program before launching the package manager."
-msgstr ""
-
-#: thonny/plugins/shell_config_page.py:64
-msgid "Open evaluated values in Object inspector"
-msgstr ""
-
-#: thonny/plugins/cpython/__init__.py:370
-msgid "Python executable"
-msgstr ""
-
-#: thonny/plugins/cpython/__init__.py:393
-msgid "NB! File selection button may not work properly when selecting executables\n"
-"from a virtual environment. In this case choose the 'activate' script instead\n"
-"of the interpreter (or enter the path directly to the box)!"
-msgstr ""
-
-#: thonny/plugins/cpython_ssh/__init__.py:153
-msgid "Remote Python 3 (SSH)"
-msgstr ""
-
-#: thonny/plugins/micropython/__init__.py:284
+#: thonny/plugins/micropython/__init__.py:292
 msgid "Not connected"
 msgstr ""
 
-#: thonny/plugins/micropython/__init__.py:451
+#: thonny/plugins/micropython/__init__.py:411
+msgid "Port or WebREPL"
+msgstr ""
+
+#: thonny/plugins/micropython/__init__.py:411
+msgid "Port"
+msgstr "Port"
+
+#: thonny/plugins/micropython/__init__.py:421
+msgid "Try to detect port automatically"
+msgstr "Încercați să detectați automat portul"
+
+#: thonny/plugins/micropython/__init__.py:462
 msgid "Advanced options"
 msgstr ""
 
-#: thonny/plugins/micropython/__init__.py:458
+#: thonny/plugins/micropython/__init__.py:469
 msgid "Install or update firmware"
 msgstr ""
 
-#: thonny/plugins/micropython/__init__.py:961
+#: thonny/plugins/micropython/__init__.py:485
+msgid "Connect your device to the computer and select corresponding port below"
+msgstr ""
+"Conectați dispozitivul la computer și selectați portul corespunzător de "
+"mai jos"
+
+#: thonny/plugins/micropython/__init__.py:488
+msgid "look for your device name, \"USB Serial\" or \"UART\""
+msgstr "căutați numele dispozitivului dvs., „Seria USB” sau „UART”"
+
+#: thonny/plugins/micropython/__init__.py:490
+msgid "If you can't find it, you may need to install proper USB driver first."
+msgstr ""
+"Dacă nu îl găsiți, poate fi necesar să instalați mai întâi un driver USB "
+"adecvat."
+
+#: thonny/plugins/micropython/__init__.py:527
+msgid "Password"
+msgstr ""
+
+#: thonny/plugins/micropython/__init__.py:965
+msgid "MicroPython (generic)"
+msgstr "MicroPython (generic)"
+
+#: thonny/plugins/micropython/__init__.py:974
 msgid "MicroPython (local)"
 msgstr ""
 
-#: thonny/plugins/micropython/__init__.py:971
+#: thonny/plugins/micropython/__init__.py:984
 msgid "MicroPython (SSH)"
 msgstr ""
 
@@ -1580,11 +1876,16 @@ msgid "Shadowed items (not importable):"
 msgstr ""
 
 #: thonny/plugins/micropython/pip_gui.py:208
-msgid "Package is not available at micropython.org. Version at PyPI will be installed."
+msgid ""
+"Package is not available at micropython.org. Version at PyPI will be "
+"installed."
 msgstr ""
 
 #: thonny/plugins/micropython/pip_gui.py:219
-msgid "NB! micropython.org has published version %s of this package and this will be installed by default."
+#, python-format
+msgid ""
+"NB! micropython.org has published version %s of this package and this "
+"will be installed by default."
 msgstr ""
 
 #: thonny/plugins/micropython/pip_gui.py:245
@@ -1601,7 +1902,6 @@ msgstr ""
 
 #: thonny/plugins/micropython/pip_gui.py:275
 msgid "This dialog lists top-level modules from following directories:\n"
-""
 msgstr ""
 
 #: thonny/plugins/micropython/pip_gui.py:284
@@ -1612,51 +1912,77 @@ msgstr ""
 msgid "no absolute lib directory in sys.path"
 msgstr ""
 
-#: thonny/plugins/micropython/uf2dialog.py:40
+#: thonny/plugins/micropython/uf2dialog.py:42
 msgid "Version to be installed"
 msgstr ""
 
-#: thonny/plugins/micropython/uf2dialog.py:48
+#: thonny/plugins/micropython/uf2dialog.py:47
+msgid "please wait"
+msgstr "te rog asteapta"
+
+#: thonny/plugins/micropython/uf2dialog.py:50
 msgid "Target device location"
 msgstr ""
 
-#: thonny/plugins/micropython/uf2dialog.py:59
+#: thonny/plugins/micropython/uf2dialog.py:61
 msgid "Target device model"
 msgstr ""
 
-#: thonny/plugins/micropython/uf2dialog.py:145
+#: thonny/plugins/micropython/uf2dialog.py:167
 msgid "Please wait"
 msgstr ""
 
-#: thonny/plugins/pip_gui.py:67
-msgid "Search on PyPI"
-msgstr ""
+#: thonny/plugins/printing/__init__.py:84
+msgid "Print..."
+msgstr "Imprimare..."
 
-#: thonny/plugins/pip_gui.py:79
-msgid "Delete selected"
-msgstr ""
+#: thonny/plugins/system_shell/__init__.py:59
+msgid "Open system shell..."
+msgstr "Deschideți shell-ul sistemului ..."
 
-#: thonny/base_file_browser.py:661
-msgid "Open in Thonny's text editor"
-msgstr ""
+#~ msgid "Find package from PyPI"
+#~ msgstr "Găsiți pachetul de la PyPI"
 
-#: thonny/base_file_browser.py:326
-msgid "Storage space on this drive or filesystem"
-msgstr ""
+#~ msgid "Known interpreters"
+#~ msgstr "Interpreți cunoscuți"
 
-#: thonny/base_file_browser.py:327
-msgid "total space"
-msgstr ""
+#~ msgid "Your interpreter isn't in the list?"
+#~ msgstr "Interpretul dvs. nu este pe listă?"
 
-#: thonny/base_file_browser.py:328
-msgid "used space"
-msgstr ""
+#~ msgid "Create new virtual environment"
+#~ msgstr "Creați un mediu virtual nou"
 
-#: thonny/base_file_browser.py:329
-msgid "free space"
-msgstr ""
+#~ msgid "Select existing or create a new empty directory"
+#~ msgstr "Selectați existent sau creați un nou director gol"
 
-#: thonny/base_file_browser.py:335
-msgid "Storage info"
-msgstr ""
+#~ msgid "Expand in Shell"
+#~ msgstr "Extindeți în Shell"
+
+#~ msgid "Cancel the process?"
+#~ msgstr "Anulați procesul?"
+
+#~ msgid ""
+#~ "The process is still running.\n"
+#~ "Are you sure you want to cancel?"
+#~ msgstr ""
+#~ "Procesul este încă în desfășurare.\n"
+#~ "Esti sigur ca vrei sa anulezi?"
+
+#~ msgid "You need to enter"
+#~ msgstr "Trebuie să intri"
+
+#~ msgid "Done!"
+#~ msgstr "Terminat!"
+
+#~ msgid "Firmware"
+#~ msgstr "Firmware"
+
+#~ msgid "Working..."
+#~ msgstr "Lucru..."
+
+#~ msgid "Uploading %s to %s"
+#~ msgstr "Se încarcă% s în% s"
+
+#~ msgid "Friendly traceback level"
+#~ msgstr ""
 

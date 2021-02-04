@@ -9,7 +9,7 @@ from tkinter import messagebox, ttk
 
 from _tkinter import TclError
 
-from thonny import get_runner, get_workbench, ui_utils
+from thonny import get_runner, get_workbench, ui_utils, SOFTWARE_NAME
 from thonny.base_file_browser import ask_backend_path, choose_node_for_file_operations
 from thonny.codeview import CodeView, BinaryFileException
 from thonny.common import (
@@ -637,10 +637,13 @@ class EditorNotebook(ui_utils.ClosableNotebook):
             "file",
             tr("Save as..."),
             self._cmd_save_file_as,
+            caption=tr("Save as..."),
             default_sequence=select_sequence("<Control-Shift-S>", "<Command-Shift-s>"),
             extra_sequences=["<Control-Greek_SIGMA>"],
             tester=lambda: self.get_current_editor() is not None,
             group=10,
+            image="save-file",
+            include_in_toolbar=True,
         )
 
         get_workbench().add_command(
@@ -745,6 +748,19 @@ class EditorNotebook(ui_utils.ClosableNotebook):
 
     def _cmd_new_file(self):
         new_editor = Editor(self)
+        # nagi@naive: Always create file
+        new_filename: str = ""
+        if not os.path.exists(os.path.expanduser(os.path.join("~", SOFTWARE_NAME))):
+            os.mkdir(os.path.expanduser(os.path.join("~", SOFTWARE_NAME)))
+        for new_index in range(1, 1000):
+            new_filename = os.path.expanduser(
+                os.path.join("~", SOFTWARE_NAME, "mycode{}.py".format(new_index))
+            )
+            if not os.path.exists(new_filename):
+                with open(new_filename, "w"):
+                    pass
+                break
+        new_editor._load_file(new_filename)
         get_workbench().event_generate("NewFile", editor=new_editor)
         self.add(new_editor, text=new_editor.get_title())
         self.select(new_editor)

@@ -1380,6 +1380,18 @@ def load_plugin() -> None:
     )
 
     get_workbench().add_command(
+        "step_back",
+        "run",
+        tr("Step back"),
+        lambda: _issue_debugger_command("step_back"),
+        caption=tr("Back"),
+        tester=lambda: _debugger_command_enabled("step_back"),
+        default_sequence=select_sequence("<Control-b>", "<Command-b>"),
+        group=30,
+        include_in_toolbar=True,
+    )
+
+    get_workbench().add_command(
         "resume",
         "run",
         RESUME_COMMAND_CAPTION,
@@ -1389,7 +1401,7 @@ def load_plugin() -> None:
         default_sequence="<F8>",
         group=30,
         image="resume",
-        include_in_toolbar=not get_workbench().in_simple_mode(),
+        include_in_toolbar=False,
     )
 
     get_workbench().add_command(
@@ -1402,17 +1414,6 @@ def load_plugin() -> None:
         group=30,
         image="run-to-cursor",
         include_in_toolbar=False,
-    )
-
-    get_workbench().add_command(
-        "step_back",
-        "run",
-        tr("Step back"),
-        lambda: _issue_debugger_command("step_back"),
-        caption=tr("Back"),
-        tester=lambda: _debugger_command_enabled("step_back"),
-        default_sequence=select_sequence("<Control-b>", "<Command-b>"),
-        group=30,
     )
 
     get_workbench().add_view(StackView, tr("Stack"), "se")
