@@ -7,10 +7,14 @@ from typing import TYPE_CHECKING, Optional, cast
 
 SINGLE_INSTANCE_DEFAULT = True
 
+SOFTWARE_NAME = "NaivePython"  # "Thonny"
+SOFTWARE_UPPERCASE_NAME = "NAIVE_PYTHON"  # "THONNY"
+SOFTWARE_LOWERCASE_NAME = "naive_python"  # "thonny"
+
 
 def _compute_thonny_user_dir():
-    if os.environ.get("THONNY_USER_DIR", ""):
-        return os.path.expanduser(os.environ["THONNY_USER_DIR"])
+    if os.environ.get(SOFTWARE_UPPERCASE_NAME + "_USER_DIR", ""):
+        return os.path.expanduser(os.environ[SOFTWARE_UPPERCASE_NAME + "_USER_DIR"])
     elif is_portable():
         if platform.system() == "Windows":
             root_dir = os.path.dirname(sys.executable)
@@ -28,19 +32,19 @@ def _compute_thonny_user_dir():
         and getattr(sys, "real_prefix") != sys.prefix
     ):
         # we're in a virtualenv or venv
-        return os.path.join(sys.prefix, ".thonny")
+        return os.path.join(sys.prefix, "." + SOFTWARE_LOWERCASE_NAME)
     elif platform.system() == "Windows":
         from thonny import misc_utils
 
-        return os.path.join(misc_utils.get_roaming_appdata_dir(), "Thonny")
+        return os.path.join(misc_utils.get_roaming_appdata_dir(), SOFTWARE_NAME)
     elif platform.system() == "Darwin":
-        return os.path.expanduser("~/Library/Thonny")
+        return os.path.expanduser("~/Library/" + SOFTWARE_NAME)
     else:
         # https://specifications.freedesktop.org/basedir-spec/latest/ar01s02.html
         data_home = os.environ.get(
             "XDG_CONFIG_HOME", os.path.expanduser(os.path.join("~", ".config"))
         )
-        return os.path.join(data_home, "Thonny")
+        return os.path.join(data_home, SOFTWARE_NAME)
 
 
 def _read_configured_debug_mode():
@@ -62,8 +66,12 @@ def _read_configured_debug_mode():
 
 def is_portable():
     # it can be explicitly declared as portable or shared ...
-    portable_marker_path = os.path.join(os.path.dirname(sys.executable), "portable_thonny.ini")
-    shared_marker_path = os.path.join(os.path.dirname(sys.executable), "shared_thonny.ini")
+    portable_marker_path = os.path.join(
+        os.path.dirname(sys.executable), "portable_" + SOFTWARE_LOWERCASE_NAME + ".ini"
+    )
+    shared_marker_path = os.path.join(
+        os.path.dirname(sys.executable), "shared_" + SOFTWARE_LOWERCASE_NAME + ".ini"
+    )
 
     if os.path.exists(portable_marker_path) and not os.path.exists(shared_marker_path):
         return True
@@ -141,6 +149,15 @@ def get_ipc_file_path():
 
 def _check_welcome():
     from thonny import misc_utils
+
+    if not os.path.exists(CONFIGURATION_FILE):
+        from thonny.config import ConfigurationManager
+
+        conf = ConfigurationManager(CONFIGURATION_FILE)
+        conf.set_option("general.language", "zh_CN")
+        conf.set_option("general.ui_mode", "simple")
+        conf.save()
+        return True
 
     if not os.path.exists(CONFIGURATION_FILE) and not misc_utils.running_on_rpi():
         from thonny.config import ConfigurationManager
