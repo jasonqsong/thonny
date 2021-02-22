@@ -30,6 +30,9 @@ from thonny import (
     languages,
     running,
     ui_utils,
+    SOFTWARE_NAME,
+    SOFTWARE_UPPERCASE_NAME,
+    SOFTWARE_LOWERCASE_NAME,
 )
 from thonny.common import Record, UserError, normpath_with_actual_case
 from thonny.config import try_load_configuration
@@ -63,7 +66,7 @@ from thonny.ui_utils import (
 logger = logging.getLogger(__name__)
 
 SERVER_SUCCESS = "OK"
-SIMPLE_MODE_VIEWS = ["ShellView"]
+SIMPLE_MODE_VIEWS = ["ShellView", "VariablesView", "AssistantView"]
 
 MenuItem = collections.namedtuple("MenuItem", ["group", "position_in_group", "tester"])
 BackendSpec = collections.namedtuple(
@@ -279,7 +282,7 @@ class Workbench(tk.Tk):
         languages.set_language(self.get_option("general.language"))
 
     def _init_window(self) -> None:
-        self.title("Thonny")
+        self.title(SOFTWARE_NAME)
 
         self.set_default("layout.zoomed", False)
         self.set_default("layout.top", 15)
@@ -661,7 +664,8 @@ class Workbench(tk.Tk):
                 group=80,
             )
 
-        if self.in_simple_mode():
+        # nagi@naive: Don't show zoom and exit buttons
+        if self.in_simple_mode() and False:
             self.add_command(
                 "font",
                 "tools",
@@ -1403,6 +1407,8 @@ class Workbench(tk.Tk):
         update_visibility()
 
     def _init_regular_mode_link(self):
+        # nagi@naive: Don't switch to regular mode
+        return
         if self.get_ui_mode() != "simple":
             return
 
@@ -2416,6 +2422,7 @@ class Workbench(tk.Tk):
             title_text = "Portable Thonny"
         else:
             title_text = "Thonny"
+        title_text = SOFTWARE_NAME
         if editor != None:
             title_text += "  -  " + editor.get_long_description()
 
@@ -2473,6 +2480,8 @@ class Workbench(tk.Tk):
             else:
                 fragment = None
 
+            # nagi@naive: Never open HelpView
+            return
             self.show_view("HelpView").load_topic(topic, fragment)
             return
 
@@ -2482,6 +2491,8 @@ class Workbench(tk.Tk):
         webbrowser.open(url, False, True)
 
     def open_help_topic(self, topic, fragment=None):
+        # nagi@naive: Never open HelpView
+        return
         self.show_view("HelpView").load_topic(topic, fragment)
 
     def bell(self, displayof=0):

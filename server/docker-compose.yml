@@ -1,0 +1,32 @@
+version: "3.9"
+services:
+  mariadb:
+    image: "mariadb:10"
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_DATABASE: "matomo"
+      MYSQL_ROOT_PASSWORD: "NOT_SECURE"
+      MYSQL_USER: "matomo"
+      MYSQL_PASSWORD: "NOT_SECURE"
+  phpmyadmin:
+    image: "phpmyadmin"
+    ports:
+      - "8080:80"
+    environment:
+      PMA_ARBITRARY: "1"
+      PMA_HOST: "mariadb"
+      PMA_USER: "root"
+      PMA_PASSWORD: "NOT_SECURE"
+  matomo:
+    image: "matomo:4"
+    ports:
+      - "80:80"
+      - "443:443"
+    environment:
+      MATOMO_DATABASE_HOST: "mariadb"
+      MATOMO_DATABASE_ADAPTER: "mysql"
+      MATOMO_DATABASE_DBNAME: "matomo"
+      MATOMO_DATABASE_TABELS_PREFIX: "matomo_"
+      MATOMO_DATABASE_USERNAME: "matomo"
+      MATOMO_DATABASE_PASSWORD: "NOT_SECURE"

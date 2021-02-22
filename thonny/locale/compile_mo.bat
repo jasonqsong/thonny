@@ -1,3 +1,3 @@
 cd ..\..
-C:\Py3\Scripts\pybabel compile -d thonny/locale/ -D thonny
+pybabel compile -f -d thonny/locale/ -D thonny
 pause
